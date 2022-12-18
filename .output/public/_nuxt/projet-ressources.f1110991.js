@@ -1,0 +1,1 @@
+const e=""+new URL("projet-happydreche.b16ff510.svg",import.meta.url).href,r=""+new URL("projet-lefossilemagique.5c76d709.svg",import.meta.url).href,s=""+new URL("projet-ressources.215ff8ee.svg",import.meta.url).href;export{s as _,e as a,r as b};
