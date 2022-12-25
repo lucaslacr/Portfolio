@@ -240,6 +240,12 @@ a {
   color: #0B051E;
 }
 
+p a {
+  line-height: 220%;
+  border-bottom: #dbd7e2 3px solid;
+  line-height: initial;
+}
+
 ul {
   margin-left: 16px;
 }

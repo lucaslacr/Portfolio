@@ -56,7 +56,7 @@
           <img src="~assets/projet-lefossilemagique-methode-1.png" loading="lazy" alt="Schéma Double diamant du projet" />
 
           <p>
-            Le premier semestre du projet a été mené avec la méthode du design thinking avec le double diamant. Dans la
+            Le premier semestre du projet a été mené avec la méthode du <Nuxt-link to="/articles/le-design-thinking">design thinking</Nuxt-link> avec le double diamant. Dans la
             phase exploration, nous avons cartographié, l'existant : Dispositifs muséaux innovants, Application de
             vulgarisation et d'apprentissage, Contenu et dispositif portant sur la science de la Paléontologie.
             <br><br>
