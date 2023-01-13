@@ -235,6 +235,10 @@ p {
   margin-top: 5px;
 }
 
+p.sans-espacement {
+  margin: 16px 0px 8px 0px !important;
+}
+
 a {
   text-decoration: none;
   color: #0B051E;

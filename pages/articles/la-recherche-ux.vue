@@ -85,9 +85,9 @@
                     <img src="~assets/article-recherche-ux-cartographie-des-moyens-de-recherche.png" loading="lazy"
                 alt="Cartographie des méthodes sur les axes besoin/usage et quantitative/qualitative" />
                     <h2>Les approches de rendu</h2>
-                    <p>Pour regrouper les recherches et les rendre exploitables par les équipes et les commanditaires,
+                    <p class="sans-espacement">Pour regrouper les recherches et les rendre exploitables par les équipes et les commanditaires,
                         il
-                        y a plusieurs options :
+                        y a plusieurs options :</p>
                     <ul>
                         <li><b>L'atomic Research</b> consiste à consigner les retours et les insights de la recherche de
                             manière uniformisée et taguée de sorte à constituer une grande base de connaissances où il
@@ -100,7 +100,6 @@
                             concentrer davantage sur les résultats, aller à l'essentiel pour que la passation entre les
                             équipes de recherche et de conception soit la plus fluide possible.</li>
                     </ul>
-                    </p>
                     <h2>Les livrables</h2>
                     <ul>
                         <li><b>L'expérience Map</b> c'est la cartographie de l'expérience utilisateur, elle permet de

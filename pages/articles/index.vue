@@ -29,8 +29,7 @@
           <div class="article-image"><img src="~assets/miniature-article-recherche-ux.png" alt=""></div>
           <div class="article-contenu">
             <h2>La recherche UX</h2>
-            <p>Sans recherche UX, les prises de décisions serait faites arbitrairement et aurais de grand risque de
-              manquer leurs cibles et objectifs</p>
+            <p>Sans recherche UX, les prises de décision seraient faites arbitrairement et auraient de grands risques de manquer leurs cibles et objectifs</p>
             <p class="info">20 octobre 2022 · Recherche UX, Méthode, données</p>
           </div>
         </Nuxt-link>

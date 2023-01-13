@@ -24,7 +24,7 @@
                         UX, entre le client puis avec les développeurs. Et qui dit transmission, dit rigueur pour éviter
                         la perte d'informations et les retours en arrière. </p>
                     <h2>1<span class="est-mauve">.</span> Rassembler les inputs</h2>
-                    <p>
+                    <p class="sans-espacement">
                         Les inputs des projets traditionnels :
                     <ul>
                         <li>Le cahier des charges</li>
@@ -33,7 +33,7 @@
                         <li>Un benchmark du secteur</li>
                     </ul>
                     </p>
-                    <p>
+                    <p class="sans-espacement">
                         Dans les projets plus axés sur de la recherche UX et design thinking, les inputs sont :
                     <ul>
                         <li>Les wireflows</li>
@@ -81,14 +81,14 @@
                     </p>
 
                     <h2>6<span class="est-mauve">.</span> Validation par le commanditaire</h2>
-                    <p>Avant de partir en production, les maquettes doivent être validées par le commanditaire, ce
-                        processus peut s’avérer long :
+                    <p class="sans-espacement">Avant de partir en production, les maquettes doivent être validées par le commanditaire, ce
+                        processus peut s’avérer long :</p>
                     <ul>
                         <li>Retours tardifs</li>
                         <li>Commentaires contradictoires de la part des différentes parties prenantes</li>
                         <li>Retours en arrière récurrents</li>
                         <li>Les reports de décisions</li>
-                    </ul><br>
+                    </ul><p>
                     Pour éviter ces situations bloquantes et garder une fluidité dans le projet, il faut réunir toutes les
                     parties prenantes commanditaires et mener une réunion de discussions et validation des maquettes.
                     L'occasion de mettre en valeur les solutions choisies par les designers, d'échanger, d'écouter et de
