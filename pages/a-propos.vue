@@ -21,7 +21,7 @@
             <br><br>
             J'aime dessiner, apprendre, expérimenter, et explorer de nouvelles choses.
             <br><br>
-            Actuellement Designer UX UI à Inouit, j'élabore des parcours
+            Designer UX UI, j'élabore des parcours
             utilisateur et des interfaces pour résoudre des problèmes et simplifier la vie des utilisateurs.
           </p><br><br><br>
           <div class="colonnes">
