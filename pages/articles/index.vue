@@ -17,12 +17,12 @@
     </section>
     <div class="margium-l marge-haute-l marge-basse-l">
       <div class="espacium">
-      <!--  <Nuxt-link to="articles/audit-ux" class="article">
+   <!--  <Nuxt-link to="articles/audit-ux" class="article">
           <div class="article-image"><img src="~assets/miniature-article-audit-ux.png" alt=""></div>
           <div class="article-contenu">
             <h2>L'audit UX</h2>
             <p>Comment évaluer la conception d'une interface, quelles sont les critères à prendre en compte pour mener cette évaluation</p>
-            <p class="info">20 novembre 2022 · Méthode, Audit, utilisabilité</p>
+            <p class="info">20 novembre 2022 · Méthode, Audit, Utilisabilité</p>
           </div>
         </Nuxt-link> -->
         <Nuxt-link to="articles/la-recherche-ux" class="article">
@@ -38,7 +38,7 @@
           <div class="article-contenu">
             <h2>Le processus UI</h2>
             <p>Comment passer du CDC ou de la recherche UX aux maquettes prête à être intégré par les développeurs</p>
-            <p class="info">20 septembre 2022 · Recherche UX, Méthode, données </p>
+            <p class="info">20 septembre 2022 · interface, Méthode, UI design </p>
           </div>
         </Nuxt-link>
         <Nuxt-link to="articles/le-design-thinking" class="article" alt="">
