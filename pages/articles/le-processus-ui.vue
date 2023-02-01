@@ -100,7 +100,7 @@
                         projet Figma pour aider les développeurs dans l'intégration et le développement des pages.
                         Toutefois, certains éléments nécessitent plus de précisions : quel est le comportement du menu
                         (aux cliques ou au survol...), les fonctionnalités des champs (auto-complétion, option des
-                        champs textes, contenu des liste déroulantes...)</p>
+                        champs textes, le contenu des listes déroulantes...), les zones cliquables.</p>
                 </div>
             </div>
         </article>

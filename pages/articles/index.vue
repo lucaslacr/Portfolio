@@ -17,14 +17,14 @@
     </section>
     <div class="margium-l marge-haute-l marge-basse-l">
       <div class="espacium">
-   <!--  <Nuxt-link to="articles/audit-ux" class="article">
+        <Nuxt-link to="articles/audit-ux" class="article">
           <div class="article-image"><img src="~assets/miniature-article-audit-ux.png" alt=""></div>
           <div class="article-contenu">
             <h2>L'audit UX</h2>
             <p>Comment évaluer la conception d'une interface, quelles sont les critères à prendre en compte pour mener cette évaluation</p>
-            <p class="info">20 novembre 2022 · Méthode, Audit, Utilisabilité</p>
+            <p class="info">20 janvier 2023 · Méthode, Audit, Utilisabilité</p>
           </div>
-        </Nuxt-link> -->
+        </Nuxt-link> 
         <Nuxt-link to="articles/la-recherche-ux" class="article">
           <div class="article-image"><img src="~assets/miniature-article-recherche-ux.png" alt=""></div>
           <div class="article-contenu">

@@ -16,7 +16,7 @@
         <div class="colonne">
           <h4>Mentions légales</h4>
           <p>
-            Tous droits réservés · Lucas Lacroix · 2022 ·
+            Tous droits réservés · Lucas Lacroix · 2023 ·
             <Nuxt-link to="/mentions-legales" rel="nofollow">Mentions légales</Nuxt-link>
           </p>
         </div>
