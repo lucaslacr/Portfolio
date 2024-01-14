@@ -1,0 +1,717 @@
+---
+import LayoutArticle from "../../layouts/LayoutArticle.astro";
+---
+
+<LayoutArticle
+	title="Accessibilité, comment concevoir pour tous ?"
+	metadata="8 mai 2023 · 15 min"
+	description="Qu’est-ce qu'une réalisation accessible, les handicaps, les règles à prendre en compte, s'organiser pour piloter la mise en conformité"
+>
+	<div>
+		<p>
+			Oubliée ou omise de nombreuses réalisations, l’accessibilité
+			numérique, abrégée A11y, est en passe de devenir la norme grâce à la
+			législation. Un gain pour de nombreuses personnes exclues du
+			numérique et pour l’amélioration des expériences d'usages.
+		</p>
+		<h2>Pourquoi s'intéresser à l'accessibilité</h2>
+		<ul class="interval-reduit">
+			<li>L'accessibilité concerne 12 millions de personnes en France</li>
+			<li>
+				Se mettre en conformité : loi du 11 février 2005, Directive (UE)
+				2019/882
+			</li>
+			<li>
+				Les mesures d'accessibilité, améliorent l’expérience utilisateur
+				de tous
+			</li>
+			<li>L’accessibilité est un vecteur d'innovation</li>
+			<li>
+				S'engager pour l’égalité des droits des personnes handicapées à
+				l'accès au numérique
+			</li>
+		</ul>
+		<h2>Les handicaps et les situations de handicaps</h2>
+		<p>
+			Pour apprendre à concevoir pour tous, il est nécessaire de
+			comprendre les différents handicaps. Il existe 7 familles de
+			handicaps :
+		</p>
+		<ul>
+			<li>
+				<b>Cognitif</b>, altération des processus cérébraux permettant
+				d’acquérir et de traiter des informations. On y retrouve les
+				troubles DYS, de déficit de l’attention, l'hyperactivité et les
+				troubles du spectre autistique.
+			</li>
+			<li>
+				<b>Mental</b>, il se traduit par des difficultés de réflexion,
+				de conceptualisation, de communication et de décision. La
+				Trisomie 21 et le syndrome x fragile sont des handicaps mentaux
+			</li>
+			<li>
+				Les handicaps <b>Psychiques</b> sont caractérisés par des
+				efforts permanents pour s’adapter et entrer en relation avec les
+				autres ou des difficultés de concentration. Pathologies :
+				Névrose, Troubles obsessionnels compulsifs, phobies, addictions,
+				dépression.
+			</li>
+			<li>
+				<b>Moteur</b>, Ces personnes rencontrent des difficultés à se
+				déplacer, conserver ou changer de position, effectuer certains
+				gestes : Troubles musculo-squelettiques, rhumatisme, Lombalgie,
+				malformation, paralysie.
+			</li>
+			<li>
+				<b>Visuel</b>, perte de l’acuité visuelle pouvant aller jusqu’à
+				la cécité : myopie, presbytie, rétinite, daltonisme, Glaucome,
+				malvoyance, non-voyance, cataracte.
+			</li>
+			<li>
+				<b>Auditif</b>, difficultés ou impossibilité à percevoir et
+				localiser, les sons et la parole. Acouphène ou surdité légère à
+				profonde, perte auditive totale
+			</li>
+			<li>
+				<b>Maladie invalidante</b>, restriction d’activités en matière
+				de mobilité ou de quantité de travail à fournir, en durée ou en
+				intensité. Hypertension, insuffisance cardiaque, diabète,
+				maladies professionnelles, allergie, cancer, épilepsie...
+			</li>
+		</ul>
+		<p>
+			Pour les handicaps visuels et moteurs, il existe des technologies
+			d’assistance : La synthèse vocale, la plage braille, l'eye tracking,
+			le zoom par défaut réglé à 200% et la navigation clavier. Pour
+			rendre compatible un dispositif numérique à tous, il faut prendre en
+			compte les particularités des différents handicaps et des
+			technologies d'assistances qu'ils utilisent.
+		</p>
+		<p>
+			Les handicaps ne sont pas seulement permanents, ils peuvent être
+			également temporaires, liées à une situation ou à l'âge. Par
+			exemple, si on ne prend pas en compte les critères de contraste des
+			textes, une personne malvoyante ou une personne qui utilisent son
+			téléphone en plein soleil ne pourront pas lire les contenus d'une
+			application ou d'un site.
+		</p>
+		<div class="conteneur-table">
+			<table aria-label="Tableau présentant les différents handicaps">
+				<thead>
+					<td></td>
+					<th>Moteur</th>
+					<th>Visuel</th>
+					<th>Cognitif</th>
+					<th>Auditif</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="b"> Permanent</td>
+						<td>Paralysie, tremblement, une seule main...</td>
+						<td>Non-voyant, malvoyant, trouble de la vision</td>
+						<td>Troubles, déficiences, démences</td>
+						<td>Sourd, malentendant</td>
+					</tr>
+					<tr>
+						<td class="b">Temporaire</td>
+						<td>Bras dans le plâtre</td>
+						<td>Conjonctivite, perte ou lunettes plus au niveau</td>
+						<td>Fatigue, charge mentale importante</td>
+						<td>Acouphène, otite</td>
+					</tr>
+					<tr>
+						<td class="b">Situationnel</td>
+						<td>Main prise</td>
+						<td>Plein soleil</td>
+						<td>Environnement perturbateur, première utilisation</td
+						>
+						<td>Environnement bruyant</td>
+					</tr>
+					<tr>
+						<td class="b">Vieillissement</td>
+						<td>Perte de motricité</td>
+						<td>Vue qui baisse</td>
+						<td>Perte cognitive</td>
+						<td>Perte d'audition</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<p>
+			Le navigateur Firefox ou l’extension <a
+				href="https://chrome.google.com/webstore/detail/web-disability-simulator/olioanlbgbpmdlgjnnampnnlohigkjla"
+				target="_blank"
+				rel="nofollow">Web diasbility simulator</a
+			> permettent de percevoir le site à travers certains handicaps comme
+			la perte de contraste, la non-perception des couleurs, Parkinson, la
+			dyslexie et les troubles de l'attention.
+		</p>
+		<h2>Concevoir pour tous (design)</h2>
+		<h3>Les contrastes</h3>
+		<img
+			src="/assets/article-a11y-contrast.webp"
+			loading="lazy"
+			alt="2 champs de recherche avec un contrast de couleur différent"
+		/>
+		<p>
+			Un point important de la prise en compte de la situation de handicap
+			visuel est la gestion des
+			<b>contrastes</b>. Il se calcule avec 3 éléments : la taille du
+			texte ou de l’icône, sa couleur et la couleur de fond. Des sites et
+			outils comme <a
+				href="https://www.whocanuse.com/"
+				target="_blank"
+				rel="nofollow">Who Can Use</a
+			> ou <a
+				href="https://www.figma.com/community/plugin/911262488575486588/Contrast"
+				target="_blank"
+				rel="nofollow">l’extension Contrast</a
+			> pour Figma vous permettent de les tester avant la production des
+			interfaces.
+		</p>
+		<h3>Les polices</h3>
+		<img
+			src="/assets/article-a11y-police.webp"
+			loading="lazy"
+			alt="2 texte avec des typographies différentes"
+		/>
+		<p>
+			<b>Les polices</b> de corps et de titre doivent être choisies pour
+			garantir une bonne lisibilité. Il faut sélectionner des polices de
+			corps avec une aperture ouverte et une hauteur d'X élevé : Open
+			sans, Lato, Merriweather, Lora. Les polices comme Futura, Helvetica
+			ont une hauteur d'X (taille des minuscules) trop basse et une
+			aperture trop fermée (lettre qui se referme sur elle-même).<br />Les
+			typographies complexes comme les scripturales et les condensées sont
+			également à éviter pour garantir une bonne lisibilité.
+		</p>
+		<h3>Les composants</h3>
+		<img
+			src="/assets/article-a11y-composant.webp"
+			loading="lazy"
+			alt="4 composants difficle d'accès : captcha, alerte temporaire, info bulle et un carrousel automatique"
+		/>
+		<p>
+			Les <b>composants</b> n'ont pas les mêmes degrés d’utilisabilité
+			pour les personnes en situation de handicap. Les captchas, alerte
+			temporaire, les infos bulles, animation et carrousel automatique
+			doivent être proscrits.
+		</p>
+		<h3>Les intitulés</h3>
+		<img
+			src="/assets/article-a11y-intitule.webp"
+			loading="lazy"
+			alt="2 intitulés de lien, l'un explicite l'autre non"
+		/>
+		<p>
+			<b>Les intitulés</b> des titres et des éléments interactifs doivent
+			être explicites. Un bouton "en savoir plus" devrait se nommer "Voir
+			toutes les plantes". Ces intitulés génériques n'ont pas un assez bon
+			niveau de guidance pour une expérience optimisée pour les handicaps
+			cognitifs. Les technologies d’assistances pour les nonvoyants
+			permettent de naviguer de lien en lien ou de titre en titre. Pour
+			rendre cet usage possible, passez d'un nom générique à des intitulés
+			explicites qui clarifient les destinations et les fonctions de ces
+			éléments interactifs.
+		</p>
+		<h3>Couleur et information</h3>
+		<img
+			src="/assets/article-a11y-couleur.webp"
+			loading="lazy"
+			alt="2 champs texte un sans picto d'erreur l'autre avec"
+		/>
+		<p>
+			La couleur est un bon vecteur de transition de l'information. On met
+			les erreurs en rouge, les informations de succès en vert. Toutefois,
+			certaines personnes ont une perception de la couleur différente
+			comme Daltoniens. Si dans un formulaire les champs incorrects sont
+			seulement mentions par une bordure rouge, ils ne seront pas en
+			capacité de les identifier. Pour pallier ces cas, l’information doit
+			être doublée d'un texte ou d'un visuel.
+		</p>
+		<h3>Bruit Visuel</h3>
+		<img
+			src="/assets/article-a11y-couleurs.webp"
+			loading="lazy"
+			alt="3 couleurs brutes, 3 couleurs douces"
+		/>
+		<p>
+			Les personnes autistes peuvent avoir une hypersensibilité au
+			toucher, aux odeurs, au son et à une exposition à une stimulation
+			visuelle forte. Sélectionner une palette de couleurs plus douce et
+			éviter les animations trop brutes et répétitives.
+		</p>
+		<h3>Gestes d'utilisations</h3>
+		<img
+			src="/assets/article-a11y-mouvement.webp"
+			loading="lazy"
+			alt="Une zone de dépôt de document sans et avec un bouton importer"
+		/>
+		<p>
+			Certains utilisateurs ne pourront pas réaliser des gestes que peut
+			imposer une interface. Pincer pour zoomer une carte, glisser des
+			documents dans une zone de la page ou encore utiliser un sous-menu
+			s'ouvrent au survol. Concevoir pour tous, c'est anticiper ces
+			limitations en proposant des designs utilisables par tous ou en
+			ajoutant des alternatives comme un bouton importer des documents.
+		</p>
+		<h3>Moyens de contacts</h3>
+		<img
+			src="/assets/article-a11y-contact.webp"
+			loading="lazy"
+			alt="Un téléphone et un téléphone et un email"
+		/>
+		<p>
+			Tout le monde ne peut pas téléphoner, s'exprimer oralement et
+			entendre son interlocuteur. Proposer comme seul recours un numéro de
+			téléphone n'est pas une solution inclusive. Les numéros d'urgence
+			comme le 112 proposent une alternative textuelle pour les personnes
+			sourde. Elles peuvent écrire aux urgences avec le 114. Fournir une
+			variété de méthode de contact est une bonne pratique : numéro de
+			téléphone, email, messagerie instantané, voie postale.
+		</p>
+		<h2>Penser les contenus pour tous</h2>
+		<h3>Les contenus inclusifs</h3>
+		<img src="/assets/article-a11y-inclusion.webp" loading="lazy" alt="" />
+		<p>
+			Les informations peuvent être orientées de manière à inclure la
+			diversité des publics : renseigner si lieux sont accessibles PMR, si
+			les activités proposées sont disponibles pour des personnes avec
+			certains handicaps.
+		</p>
+		<h3>Rédaction</h3>
+		<img
+			src="/assets/article-a11y-redaction.webp"
+			loading="lazy"
+			alt="2 phrases, l'une avec du jargon et des anglicismes l'autre sans"
+		/>
+		<p>
+			Les phrases et les paragraphes courts sont plus faciles à lire. Pour
+			raccourcir ces textes, éviter les propositions subordonnées
+			relatives - les "qui ..." ou les "que ...". Ils ont tendance à créer
+			des phrases très longues. Limiter ou expliquer le jargon, les
+			abréviations et les anglicismes pour faciliter la compréhension des
+			propos.
+		</p>
+		<h3>Messages d'erreurs</h3>
+		<img
+			src="/assets/article-a11y-message-erreur.webp"
+			loading="lazy"
+			alt=""
+		/>
+		<p>
+			Les erreurs sont fréquentes dans les parcours de navigation. De
+			source diverse leurs résolutions ne sont pas toujours aisée. Rédiger
+			ces messages de manière explicite et en donnant des éléments de
+			résolutions sont des bonnes pratique pour limiter les abandons.
+		</p>
+		<h3>Mise en forme</h3>
+		<img
+			src="/assets/article-a11y-contenu.webp"
+			loading="lazy"
+			alt="2 mise en page, l'une uniquement textuelle et non-linéaire, l'autre varié et linéaire"
+		/>
+		<p>
+			Les contenus doivent être présentés de manière linaires. Varier la
+			mise en forme en fonction du contenu simplifie l'appropriation des
+			propos : photos, diagrammes, tableaux de données, illustrations.
+		</p>
+		<h3>Multimédia</h3>
+		<img
+			src="/assets/article-a11y-multimedia.webp"
+			loading="lazy"
+			alt="2 lecteurs vidéos, l'un sans sous-titre ni transcription textuelle l'autre avec"
+		/>
+		<p>
+			Pour les éléments multimédia comme les <b>vidéos</b> et <b>audios</b
+			>, prévoir des sous-titres et une transcription textuelle pour les
+			personnes malentendantes et celles qui ne peuvent utiliser le son
+			dans leur environnement. L'<a
+				href="https://www.nikse.dk/subtitleedit/online"
+				target="_blank"
+				rel="nofollow">outil de sous-titrage Nikse</a
+			> permet de les rédiger en ligne ou sur un logiciel.
+		</p>
+		<h3>Informations téléchargeables</h3>
+		<img
+			src="/assets/article-a11y-pdf.webp"
+			loading="lazy"
+			alt="un document téléchargé et une page web"
+		/>
+		<p>
+			Les informations transmises par le téléchargement d'un document Pdf,
+			Word, Excel, ect. Peuvent poser des problématiques d'accessibilités.
+			Une page Web bien écrite permet aux personnes malvoyantes de
+			bénéficier du tagage Html pour la parcourir facilement. Si vous
+			devez partager des informations d'un document, intégrer-les
+			directement dans une page Web.
+		</p>
+
+		<h2>l’accessibilité numérique, une histoire de code</h2>
+		<h3>Les états focus</h3>
+		<img
+			src="/assets/article-a11y-focus.webp"
+			loading="lazy"
+			alt="2 menus avec et sans marquage de focus sur les onglets"
+		/>
+		<p>
+			Prévoir un <b>état focus</b> visible pour l'ensemble des éléments
+			interactifs. Ces indicateurs sont essentiels à une bonne navigation
+			au clavier, notamment pour les handicaps moteurs.
+		</p>
+
+		<details>
+			<summary>Voir le code CSS pour afficher l'état focus</summary>
+
+			<pre><code>a:focus-visible,
+	button:focus-visible,
+	select:focus-visible,
+	textarea:focus-visible,
+	summary:focus-visible,
+	input:focus-visible ew==
+		outline-offset: 2px;
+		outline: #224477 2px solid;
+		border-radius: 4px;
+		transition: none;
+		fQ==</code></pre>
+		</details>
+
+		<h3>Zone cliquable</h3>
+		<img
+			src="/assets/article-a11y-zone.webp"
+			loading="lazy"
+			alt="2 cases à cocher avec une petite et une grande zone cliquable"
+		/>
+		<p>
+			Réaliser des <b>zones cliquables larges</b> pour les éléments
+			interactifs, de sorte qu'ils soient facilement atteignables pour les
+			handicaps moteurs.
+		</p>
+
+		<h3>Étiquettes et champs</h3>
+		<img
+			src="/assets/article-a11y-champ.webp"
+			loading="lazy"
+			alt="Un champ sans étiquette, l'autre avec"
+		/>
+		<p>
+			Les champs de formulaire sans étiquettes sont un problème fréquent
+			et critique. Les personnes malvoyantes utilisent une synthèse
+			vocale. Elle énonce le type des éléments et leurs noms. Si ce
+			dernier n'est pas renseigné, il leur est difficile de savoir si
+			c'est un champ de recherche, d'inscription à une newsletter ou de
+			connexion à un compte.
+		</p>
+		<p>
+			Dans certains cas, comme pour choisir un mot de passe, des
+			instructions sont données. Parfois après la saisie (à éviter) et
+			parfois en dessous des champs. Ces indications doivent se citer en
+			amont du champ de formulaire.
+		</p>
+		<p>
+			Un cas propre aux champs de choix de mot de passe est la
+			mémorisation de ce que l'on a écrit. La fonctionnalité « Afficher »
+			permet aux utilisateurs de connaître ce qu'ils ont écrit, le
+			mémoriser et de se rassurer sur leur saisie.
+		</p>
+		<h3>Limitation de temps</h3>
+		<img
+			src="/assets/article-a11y-temps.webp"
+			loading="lazy"
+			alt="un chronomètre et un sigle infini"
+		/>
+		<p>
+			Sur certain site les sessions sont limitées dans le temps : 15
+			minutes pour remplir un formulaire, 20 min avant que le panier soit
+			perdu ou encore déconnexion du compte au bout de 30 minutes. Ces
+			limites temporelles empêchent les personnes atteintes de trouble de
+			l'attention et les personnes qui utilisent des technologies
+			d’assistance à réaliser leurs achats et rechercher d’information en
+			ligne. Elles vont avoir besoin de plus de temps pour réaliser une
+			tâche qu'une personne valide.
+		</p>
+
+		<h3>Responsive</h3>
+		<img
+			src="/assets/article-a11y-responsive.webp"
+			loading="lazy"
+			alt="un site responsive, l'autre non"
+		/>
+		<p>
+			C'est une bonne pratique depuis de nombreuses années, le responsive
+			consiste à adapter chaque élément d'une page pour qu'il s'affiche au
+			mieux quelle que soit la taille de l'écran de l'utilisateur. Elle
+			est d'autant plus importante pour les personnes malvoyantes qui
+			utilisent un zoom avancé - jusqu'à 300% - pour pouvoir lire ce qui
+			s'affiche à l'écran.
+		</p>
+		<h3>Les alternatives textuelles aux images</h3>
+		<p>
+			Les textes alternatifs aux images sont essentiels pour les personnes
+			non voyantes. Elles leur permettent de comprendre les éléments
+			visuels des pages comme les photos et icônes. Il faut à chaque image
+			un attribut Alt qui doit être remplis si l'image n'est pas
+			uniquement décorative. Pour compléter ces balises, il faut être
+			concis et se concentrer sur ces éléments de l'image :
+		</p>
+		<ul class="interval-reduit">
+			<li>Les personnes</li>
+			<li>Les lieux</li>
+			<li>Les objets</li>
+			<li>Les actions</li>
+			<li>Les émotions</li>
+		</ul>
+		<img
+			src="/assets/article-a11y-alt.webp"
+			loading="lazy"
+			alt="Arbre de décisions sur l'ajout ou non d'une balise Alt"
+		/>
+		<h3>Les animations</h3>
+		<p>
+			Les usagers peuvent être déranger par la présence d'animations. Les
+			navigateur on accès au choix des utilisateur quant à l'utilisation
+			des animation. Pour prendre en compte la préférence, il faut
+			utiliser la règle <code>media reduced motion</code> et y placer
+			toutes les animations css du site.
+		</p>
+		<details>
+			<summary>Voir le code CSS pour la règle d'animation</summary>
+			<pre><code>  @media (prefers-reduced-motion: reduce) ew==
+		.promotion ew==
+			animation: none;
+			fQ==
+			fQ==
+	</code></pre>
+		</details>
+		<h3>Les balises sémantiques HTML5</h3>
+		<img
+			src="/assets/article-a11y-html.webp"
+			loading="lazy"
+			alt="2 structure HTML, l'une avec des 'div' l'autre avec des balises sémantiques"
+		/>
+		<p>
+			Les pages web sont composées de balises. Elles permettent d'ajouter
+			des éléments de toutes sortes : images, paragraphe, lien, titre,
+			champ texte, vidéo...<br /> Pour regrouper et organiser ces éléments
+			dans les pages, il existe des balises, la dernière version du
+			langage apporte une sémantique aux régions des pages.
+			<h4>Pour les éléments d'une page</h4>
+			<ul class="interval-reduit">
+				<li>
+					<code>H1, H2, H3, H4, H5, H6</code> pour tous les titres
+					d'une page
+				</li>
+				<li>
+					<code>a</code> (lien) pour tous les éléments interactifs
+					vers des pages ou des parties de pages
+				</li>
+				<li>
+					<code>bouton</code> pour valider un formulaire, ouvrir des
+					modales, déplier des éléments et pour les autres éléments
+					interactifs
+				</li>
+				<li>
+					<code>input</code> pour tous les formulaires : case à
+					cocher, champs texte, bouton radio, etc.
+				</li>
+				<li>
+					<code>p</code> Pour les paragraphes et les textes de
+					contenus
+				</li>
+				<li>
+					<code>ul, ol</code> Pour les listes d'éléments et les listes
+					d'éléments ordonnées
+				</li>
+			</ul>
+
+			<h4>Pour les zones d'une page</h4>
+			<ul class="interval-reduit">
+				<li>
+					<code>nav</code> Pour les éléments de navigations : fil
+					d'Ariane, menu, pagination
+				</li>
+				<li><code>header</code> le haut de page</li>
+				<li><code>footer</code> le pied de page</li>
+				<li>
+					<code>section</code> pour les différentes sections d'une
+					page
+				</li>
+				<li>
+					<code>aside</code> pour les sections qui ne sont pas en
+					rapport direct avec le contenu de la page : Les contenus
+					similaires suggérés
+				</li>
+				<li>
+					<code>article</code> pour regrouper un ensemble
+					d'informations liées : une statistique et son texte
+				</li>
+			</ul>
+		</p>
+		<h3>Les balises Aria</h3>
+		<p>
+			Les balises HTML ne suffisent pas toujours à la mise en
+			accessibilité des pages. Parfois, il faut expliciter, avec des
+			balises Aria, le fonctionnement de ces éléments.
+		</p>
+		<ul>
+			<li>
+				<code>aria-label=""</code>, pour donner un nom accessible aux
+				éléments comme les tableaux, les champs sans label et les icônes
+				interactives
+			</li>
+			<li>
+				<code>aria-hidden="true"</code>, pour masquer un élément d'un
+				lecteur d'écran comme les icônes dont le texte présente la même
+				information.
+			</li>
+			<li>
+				Pour expliciter l'action des boutons, les attributs aria sont
+				recommandés.
+				<ul>
+					<li>
+						<code>aria-haspopup="true"</code> pour un bouton qui
+						ouvre un menu,
+						<code>aria-haspopup="dialog"</code> pour un bouton qui
+						ouvre un volet ou une modale.
+					</li>
+					<li>
+						<code>aria-expanded="false"</code>, pour signaler à
+						l'utilisateur que cet élément est dépliable : menu,
+						accordéons, contenu coupé<br />. Ce dernier doit être
+						utilisé avec <code>aria-controls="id"</code>
+						 pour le relier à l'élément déplié.
+					</li>
+					<li>
+						<code>aria-pressed="true"​​</code>, informe que le <code
+							>button</code
+						> est appuyé. Il peut être utiliser pour un bouton
+						play/pause ou un bouton « j'aime ». Sa valeur par
+						default, lorsqu’il n’est pas actif est <code>false</code
+						>.
+					</li>
+					<li>
+						<code>aria-selected="true"​​</code>, informe que le <code
+							>button</code
+						> est sélectionné. Il peut être utiliser pour un menu de
+						tabulation interne à une page, des boutons indiquant les
+						tailles disponibles pour une paire de chaussure, etc. Sa
+						valeur par default, lorsqu’il n’est pas actif est <code
+							>false</code
+						>.
+					</li>
+				</ul>
+			</li>
+			<li>
+				<code>role=""​</code>, Pour donner un sens sémantique aux
+				éléments HTML, exemple de valeur :
+				<ul class="interval-reduit">
+					<li>
+						<code>feed</code> Pour flux de contenu, comme les fils
+						d’actualités
+					</li>
+					<li><code>search</code> Pour les champs de recherche</li>
+					<li><code>dialog</code> Pour les modales et les volets</li>
+					<li>
+						<code>alert</code> Pour les messages d'erreurs ou les
+						alertes élevées
+					</li>
+					<li>
+						<code>status</code> Pour des messages d'informations
+						neutres, par exemple le bandeau promo en haut des pages
+						de site ecommerce.
+					</li>
+				</ul>
+				 Dans les cas ou la sémantique HTML5 suffit, il ne faut pas la
+				doubler avec les roles.
+			</li>
+			<li>
+				<code>aria-modal="true"​​</code>, Signal à la technologie
+				d’assistance la présence d'une modales, cela permet d’éviter les
+				"pièges aux claviers".
+			</li>
+		</ul>
+		<h2>Vérifier l’accessibilité du dispositif</h2>
+		<h3>Tests automatisés</h3>
+		<p>
+			Avant la mise en ligne de la solution, il est recommandé de tester
+			les pages et fonctionnalités produites. Les outils comme le très
+			visuel
+			<a href="https://wave.webaim.org/" target="_blank" rel="nofollow">
+				Wave</a
+			> pour les navigateurs permettent en un coup d'œil se rendre compte
+			des écarts aux exigences du dispositif (problèmes de contrastes,
+			champs sans étiquettes, peu de structures sémantiques, pas de texte
+			alternatif, manquement dans l'ordre des tabulations). L'outil de
+			Microsoft <a
+				href="https://accessibilityinsights.io/"
+				target="_blank"
+				rel="nofollow">Accessibility insights</a
+			> produit un résultat similaire.
+		</p>
+		<p>
+			Comme tous les outils automatisés, il arrive qu'ils génèrent des
+			faux positifs ou qu'ils ne soient pas capables de juger de la
+			pertinence d'un descriptif d'image ou d'une balise Aria manquante,
+			d'une zone cliquable suffisante, etc. C'est Pourquoi il est
+			recommandé d’utiliser en plus l’inspecteur HTML des navigateurs.
+		</p>
+		<h3>Tests d'usages</h3>
+		<p>
+			Avec Voice Over pour Mac Os ou <a
+				href="https://www.nvaccess.org/"
+				target="_blank"
+				rel="nofollow">NVDA</a
+			>
+			 pour Windows. On peut réaliser des tests d'immersion pour relever
+			des incohérences, des problématiques d'usage à la synthèse vocale et
+			à la navigation clavier que l'on n'aurait pas relevé avec les outils
+			automatisés.
+		</p>
+		<h3>Listes de vérification</h3>
+		<p>
+			Pour vérifier la conformité des différentes interfaces, il existe
+			des listes de case à cocher basé sur les référentiels pour vérifier
+			chacun de leurs critères.<br />
+
+			 L'<a
+				href="https://ara.numerique.gouv.fr/audits/nouveau"
+				target="_blank"
+				rel="nofollow">outil Ara</a
+			>
+			 développé par l'état se concentre sur les critères du <abbr
+				title="Référentiel général d'amélioration de l'accessibilité"
+				>RGAA</abbr
+			>. Si vous travaillez davantage avec la norme internationale <abbr
+				title="Web Content Accessibility Guidelines">WCAG</abbr
+			>, il existe la <a
+				href="https://webaim.org/standards/wcag/checklist"
+				target="_blank"
+				rel="nofollow">checklist réalisée par la WebAIM</a
+			>.
+		</p>
+		<h2>Se mettre en conformité</h2>
+		<ul>
+			<li>
+				Respecter <b>les critères d'accessibilités</b> du <abbr
+					title="Référentiel général d'amélioration de l'accessibilité"
+					>RGAA</abbr
+				> en version 4.<br />
+				 Attention, les solutions de type widget comme FACIL'iti ne
+				permettent pas d’obtenir une expérience accessible et une mise
+				en conformité de votre site.
+			</li>
+			<li>
+				Ajouter <b>la mention</b> "Accessibilité : X conforme" et un
+				lien de la déclaration d’accessibilité sur la page d'accueil.
+			</li>
+			<li>
+				Publier un <b>schéma pluriannuel</b> de la stratégie de mise en
+				accessibilité.
+			</li>
+			<li>
+				Proposer <b>une alternative à l'usage classique</b> du service
+				numérique et une méthode de recours.
+			</li>
+		</ul>
+	</div>
+</LayoutArticle>

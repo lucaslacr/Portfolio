@@ -1,0 +1,46 @@
+---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import FinArticle from "../components/FinArticle.astro";
+import "../components/Apparence.astro";
+
+interface Props {
+  title: string;
+  metadata: string;
+  description: string;
+}
+const { title } = Astro.props;
+const { metadata } = Astro.props;
+const { description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <Header />
+    <main id="contenu">
+      <div class="fond-sombre">
+        <section class="hero-article">
+          <div class="colonnes">
+            <div class="colonne">
+              <h1>{title}</h1>
+              <p class="metadonnee-article">{metadata}</p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section class="conteneur-article">
+        <slot />
+        <FinArticle />
+      </section>
+    </main>
+  </body>
+  <Footer />
+</html>

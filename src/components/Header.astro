@@ -1,0 +1,211 @@
+---
+import Logo  from "../assets/logo.svg";
+import IconMenu  from "../assets/menu.svg";
+import IconFermer  from "../assets/fermer.svg";
+const pathname = new URL(Astro.request.url).pathname;
+const currentPath = pathname.slice(1); 
+---
+
+<div class="fond-sombre">
+	<header>
+	  <div id="menu">
+		<a href="/" aria-label="Accueil - Logo de Lucas"><img src={Logo.src} aria-hidden="true" alt="Accueil - Logo de Lucas" /></a>
+		<nav class="menu-bureau">
+		  <ul>
+			<li><a class={currentPath === "articles" ? "active" : ""} href="/articles">Articles</a></li>
+			<li><a class={currentPath === "projets" ? "active" : ""} href="/projets">Projets</a></li>
+			<li><a class={currentPath === "a-propos" ? "active" : ""} href="/a-propos">À propos</a></li>
+		  </ul>
+		</nav>
+		<button class="menutap" id="toopen" aria-haspopup="true" aria-control="menu-content"><img src={IconMenu.src}
+			alt="Ouvrir le menu" /></button>
+		<div class="menu-mobile" id="menu-content" role="dialog" aria-modale="false">
+		  <div class="mobilehead">
+			<a href="/"><img src={Logo.src} alt="Accueil - Logo de Lucas" /></a>
+			<button id="toclose" class="menutap"><img src={IconFermer.src}
+				alt="Fermer le menu" /></button>
+		  </div>
+		  <nav class="lien-mobile">
+			<ul>
+			  <li><a class={currentPath === "articles" ? "active" : ""} href="/articles">Articles</a></li>
+			  <li><a class={currentPath === "projets" ? "active" : ""} href="/projets">Projets</a></li>
+			  <li><a class={currentPath === "a-propos" ? "active" : ""} href="/a-propos">À propos</a></li>
+			</ul>
+		  </nav>
+		</div>
+	  </div>
+	</header>
+  </div>
+
+  <script>
+	const menuButton = document.getElementById('toopen');
+	const menu = document.getElementById('menu-content');
+	const closeButton = document.getElementById('toclose');
+  
+	menuButton.addEventListener("click", OpenMenu);
+	closeButton.addEventListener("click", CloseMenu);
+  
+	function OpenMenu() {
+		menu.classList.add('is-open');
+	    menu.setAttribute('aria-modal', 'true');
+	}
+
+	function CloseMenu() {
+		menu.classList.remove('is-open');
+	    menu.setAttribute('aria-modal', 'false');
+	}
+
+  </script>
+
+  <style>
+  header {
+	background-color: var(--surface-sombre);
+	color: var(--texte-blanc);
+  }
+  
+  #menu nav a {
+	padding: 8px;
+	margin: 12px;
+	position: relative;
+	color: var(--texte-blanc);
+  }
+  
+  #menu a:focus-visible, #menu button:focus-visible {
+	outline-offset: 2px;
+	outline: var(--texte-blanc) 2px solid;
+	border-radius: 4px;
+	transition: none;
+  }
+  
+  .menu-bureau a.active::after {
+	content: '';
+	display: flex;
+	width: 16px;
+	height: 4px;
+	border-radius: 5px;
+	background-color: var(--primaire-mauve);
+	position: absolute;
+	bottom: -4px;
+	left: calc(61% - 16px);
+  }
+  
+  .lien-mobile a.active::after {
+	content: '';
+	display: flex;
+	width: 12px;
+	height: 12px;
+	border-radius: 40px;
+	background-color: var(--primaire-mauve);
+	position: absolute;
+	bottom: 18px;
+	left: -18px;
+  }
+  
+  #menu {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	padding: 14px 0px;
+	padding-top: 29px;
+	z-index: 2300;
+	max-width: 1200px;
+	margin: 0 auto;
+  }
+  
+  #menu img {
+	width: 50px;
+	padding: 5px;
+  }
+  
+  #menu a {
+	border-bottom: 0px #00000000 solid;
+	transition: 0.3s;
+  }
+  
+  header button {
+	border: 0px;
+	background-color: #00000000;
+  }
+  
+  .menu-bureau ul,
+  .menu-bureau li {
+	display: flex;
+	list-style: none;
+	margin: 0px;
+  }
+  
+  .menu-mobile ul,
+  .menu-mobile li {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	margin: 0px;
+  }
+  
+  .menu-mobile {
+	background-color: var(--surface-sombre);
+	color: var(--texte-blanc);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+	display: none;
+  }
+
+  .is-open {
+	display: block;
+  }
+  
+  .menutap {
+	display: none;
+  }
+  
+  .menu-mobile a {
+	font-size: xx-large;
+	color: var(--texte-blanc);
+	font-family: "WorkSans Bold";
+  }
+  
+  .mobilehead {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	padding: 14px 16px;
+  }
+  
+  .lien-mobile {
+	display: flex;
+	flex-direction: column;
+	margin: 25px auto;
+	width: fit-content;
+  }
+  
+  /* Adaptabilité */
+  @media (max-width: 700px) {
+  
+	#menu a {
+	  display: inline-block;
+	}
+  
+	#menu nav a {
+	  padding: 5px;
+	  margin: 6px 9px;
+	}
+  
+	.menu-bureau {
+	  display: none;
+	}
+  
+	.menutap {
+	  display: block;
+	  padding: 0;
+	}
+  
+	#menu {
+	  padding-top: 14px !important;
+	}
+  }</style>

@@ -1,0 +1,143 @@
+---
+import Logo from "../assets/logo.svg";
+import Commentaire from "../assets/message.svg";
+import Chevron from "../assets/chevron.svg";
+const pathname = new URL(Astro.request.url).pathname;
+const currentPath = pathname.slice(1); // remove the first "/"
+---
+
+<div class="rebond">
+	<a href="../" rel="nofollow"
+		><img src={Chevron.src} alt="" aria-hidden="true" /> Retour aux articles</a
+	>
+	<button aria-expanded="false" aria-controls="formulaire" id="Publier"
+		><img src={Commentaire.src} alt="" aria-hidden="true" />
+		 Publier un commentaire</button
+	>
+</div>
+<form
+	action="https://avec.lucaslacroix.com/commentaire/"
+	method="POST"
+	class="commentaire"
+	id="formulaire"
+>
+	<div class="ensemble">
+		<label for="commentaire">Votre commentaire</label>
+		<textarea
+			id="commentaire"
+			name="commentaire"
+			rows="5"
+			cols="33"
+			minlength="25"
+			maxlength="2500"
+			required></textarea>
+		<p class="description">Entre 25 et 2500 caractères</p>
+	</div>
+	<div class="ensemble">
+		<label for="nom">Votre nom</label><input
+			type="text"
+			id="nom"
+			name="nom"
+			maxlength="80"
+			required
+		/>
+	</div>
+	<div class="ensemble">
+		<label for="email">Votre courriel</label><input
+			type="email"
+			id="email"
+			name="email"
+			maxlength="240"
+			required
+		/>
+	</div>
+	<div class="ensemble">
+		<label for="profil">Votre site ou LinkedIn (optionnel)</label><input
+			type="url"
+			id="profil"
+			name="profil"
+			maxlength="480"
+		/>
+	</div>
+	<div class="ensemble" style="display: none;">
+		<label for="page">Page</label>
+		<textarea id="page" name="page" rows="1" cols="33" maxlength="240"
+			>{currentPath}</textarea
+		>
+	</div>
+	<button type="submit" class="primaire">Publier le commentaire</button>
+</form>
+<script>
+	const Publier = document.getElementById("Publier");
+	const Formulaire = document.getElementById("formulaire");
+
+	Publier.addEventListener("click", function () {
+		if (Formulaire.classList.contains("is-open")) {
+			Formulaire.classList.remove("is-open");
+			Publier.setAttribute("aria-expanded", "false");
+		} else {
+			Formulaire.classList.add("is-open");
+			Publier.setAttribute("aria-expanded", "true");
+		}
+	});
+</script>
+<style>
+	.rebond {
+		display: flex;
+		flex-direction: row;
+		max-width: 680px;
+		margin: 32px auto 0 auto;
+		gap: 12px;
+	}
+
+	.rebond a,
+	.rebond button {
+		align-items: center;
+		background-color: var(--surface-blanc);
+		border: 1px solid var(--ligne-decorative);
+		border-radius: 40px;
+		cursor: pointer;
+		display: flex;
+		flex-direction: row;
+		color: var(--texte-titre);
+		padding: 6px 24px 6px 18px;
+		transition: background-color 0.3s;
+		width: initial;
+	}
+
+	.rebond a img,
+	.rebond button img {
+		width: 24px;
+		margin-right: 8px;
+		margin-left: 0px;
+	}
+
+	.rebond a:hover,
+	.rebond button:hover {
+		background-color: #f3f3f3;
+		border: 1px var(--ligne-decorative) solid;
+	}
+
+	form.commentaire {
+		background-color: var(--surface-blanc);
+		padding: 24px;
+		border-radius: 16px;
+		max-width: 520px;
+		margin: 16px 0;
+		display: none;
+	}
+
+	form.commentaire.is-open {
+		display: block;
+	}
+
+	textarea#commentaire {
+		max-width: initial;
+	}
+
+	@media (max-width: 820px) {
+		.rebond {
+			flex-wrap: wrap;
+		}
+	}
+</style>

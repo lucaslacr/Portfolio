@@ -1,0 +1,88 @@
+---
+const pathname = new URL(Astro.request.url).pathname;
+const currentPath = pathname.slice(1); // remove the first "/"
+---
+
+	<div class="fond-footer">
+	  <footer id="findepage">
+		<div class="colonnes">
+		  <div class="colonne"></div>
+		  <div class="colonne"></div>
+		  <div class="colonne">
+			<p class="titrebaspage">Contact</p>
+			<p>
+			  <a href="mailto:&#98;&#111;&#110;&#106;&#111;&#117;&#114;&#64;&#108;&#117;&#99;&#97;&#115;&#108;&#97;&#99;&#114;&#111;&#105;&#120;&#46;&#99;&#111;&#109;" target="_blank" >&#98;&#111;&#110;&#106;&#111;&#117;&#114;&#64;&#108;&#117;&#99;&#97;&#115;&#108;&#97;&#99;&#114;&#111;&#105;&#120;&#46;&#99;&#111;&#109;</a>
+			  <br>
+			  <a href="https://www.linkedin.com/in/lucas-lacroix/" target="_blank" rel="noreferrer nofollow">LinkedIn</a>
+			</p>
+		  </div>
+		  <div class="colonne">
+			<p class="titrebaspage">Informations légales</p>
+			<p>
+			  Tous droits réservés · Lucas Lacroix · 2024 · Accessibilité : totalement conforme · 
+			  <a href="/mentions-legales" rel="nofollow">Mentions légales</a>
+			</p>
+		  </div>
+		</div>
+	  </footer>
+	</div>
+  <style>
+  footer#findepage {
+	max-width: 1200px;
+	display: block;
+	margin: 0 auto;
+	padding: 25px 0px 20px 0px;
+  }
+  
+  footer p {
+	color: var(--texte-gris-tres-clair);
+	line-height: 160%;
+	font-size: 13px;
+  }
+  
+  footer p a {
+	color: var(--texte-gris-tres-clair);
+	line-height: 160%;
+	font-size: 13px;
+	border-bottom: var(--primaire-mauve) 2px solid;
+  }
+  
+  footer p a:hover {
+	border-bottom: var(--ligne-claire) 2px solid;
+  }
+  
+  footer p a:focus-visible {
+	outline-offset: 2px;
+	outline: var(--texte-blanc) 2px solid;
+	border-radius: 4px;
+	transition: none;
+  }
+  
+  footer p.titrebaspage {
+	color: var(--texte-gris-tres-clair);
+	font-weight: 500;
+	margin-bottom: 0;
+	font-size: 1rem;
+	font-family: "WorkSans Bold";
+  }
+  
+  .fond-footer {
+	background-color: var(--surface-sombre);
+	padding: 25px 20px 20px 20px;
+  }
+  
+  footer .colonnes {
+	gap: 12px;
+  }
+  
+  @media (max-width: 820px) {
+	footer .colonnes .colonne:has(p) {
+	  margin-bottom: 32px;
+	  display: inline-block;
+	}
+	footer .colonnes {
+	gap: 0px;
+  }
+  }
+  </style>
+  

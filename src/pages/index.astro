@@ -1,0 +1,60 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import Expertise from '../components/Expertise.astro';
+---
+
+<Layout title="Lucas Lacroix, Designer UX UI">
+	<div class="fond-sombre">
+		<section class="presentation">
+		  <h1>Lucas Lacroix <div class="sous-titre"><u class="sous-ligne">Designer</u> d'expériences utilisateurs</div></h1>
+		</section>
+	  </div>
+		<section>
+		  <div class="titre-remontee">
+			<h2 class="projet">Articles</h2>
+			<a href="/articles" class="pro pour-bureau">Voir tous les articles</a>
+		  </div>
+		  <div class="carte-verticale">
+			<Card title="Les différences entre le design d'interface et d'expérience" href="articles/differences-entre-ux-ui" image="/assets/miniature-article-ux-ui.webp" description="La frontière entre ces 2 disciplines de design est parfois abstraite et confuse, l’occasion d'y voir un peu plus claire et d'y comprendre leurs fondamentaux" meta="20 avril 2023 · 6 min · Organisation, Culture"></Card>
+			<Card title="Comment gérer, le j'aime / j'aime pas ?" href="articles/comment-gerer-le-jaime-jaime-pas" image="/assets/miniature-article-ux-ui.webp" description="Les retours sont courant dans les projets de conception. Elles peut-être source de points bloquants dans un projet. Comment les anticiper, répondre et tirer parti de ces retours" meta="20 avril 2023 · 6 min · Organisation, Culture"></Card>
+			<Card title="Accessibilité, comment concevoir pour tous" href="articles/accessibilite-comment-concevoir-pour-tous" image="/assets/miniature-article-ux-ui.webp"  description="Les retours sont courant dans les projets de conception. Elles peut-être source de points bloquants dans un projet. Comment les anticiper, répondre et tirer parti de ces retours ?" meta="8 mai 2023 · 15 min · Accessibilité, Légal, Organisation"></Card>
+		  </div>
+		  <a href="/articles" class="lien-fleche pour-mobile">Voir tous les articles</a>
+		</section>
+		<section>
+		  <div class="titre-remontee">
+			<h2 class="projet">Projets</h2>
+			<a href="/projets" class="pro pour-bureau">Voir tous les projets</a>
+		  </div>
+		  <div class="carte-verticale">
+			<a href="projets/happy-dreche">
+			  <img src="assets/projet-happydreche.svg" loading="lazy" alt="" />
+			  <div>
+				<h3>Happy Drêche</h3>
+				<p>
+				  Maquette et site Wordpress pour une association éco-responsable
+				</p>
+			  </div>
+			</a>
+			<a href="/projets/le-fossile-magique/">
+			  <img src="assets/projet-lefossilemagique.svg" loading="lazy" alt="" />
+			  <div>
+				<h3>Le Fossile Magique</h3>
+				<p>
+				  Le serious game de la Galerie de Paléontologie de Paris
+				</p>
+			  </div>
+			</a>
+			<a href="/projets/ressources/">
+			  <img src="assets/projet-ressources.svg" loading="lazy" alt="" />
+			  <div>
+				<h3>Ressources DGI</h3>
+				<p>Site des Ressources en design graphique et d'interaction regroupant des outils, ressources et sites
+				  d'inspiration et de documentation</p>
+			  </div>
+			</a>
+		  </div><a href="/projets" class="lien-fleche pour-mobile">Voir tous les projets</a>
+		</section>
+		<Expertise />
+</Layout>
