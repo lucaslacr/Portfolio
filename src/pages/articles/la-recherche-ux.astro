@@ -1,0 +1,120 @@
+---
+import LayoutArticle from "../../layouts/LayoutArticle.astro";
+---
+
+<LayoutArticle
+	title="La recherche UX"
+	metadata="20 octobre 2022 · 5 min"
+	description="Parce que nous ne savons pas, nous avons des aprioris, sur les besoins, les enjeux, les problèmes auxquels doit répondre la conception. Sans elle, la probabilité de développer produit qui manquerait sa cible et sa pertinence serait élevée"
+>
+	<div>
+		<p>
+			La recherche UX prend du temps, elle est difficile et souvent onéreuse, mais alors pourquoi
+			fait-on de la recherche utilisateur ?<br>
+
+			Parce que nous ne savons pas, nous avons des aprioris, sur les besoins, les enjeux, les
+			problèmes auxquels doit répondre la conception. Sans elle, la probabilité de développer un
+			produit qui manquerait sa cible et sa pertinence serait élevée. Il est plus avantageux
+			d'investir dans la recherche que de faire d'en faire l'économie et de développer des produits
+			vains.
+		</p>
+		<h2>La recherche quantitative</h2>
+
+		<ul>
+			<li><b>Les données analytiques</b> Avec des outils comme Matomo ou Google Analytics, il est
+				possible de comprendre les parcours, la démographie, faire ressortir les recherches faites
+				sur le site et suivre les conversions.</li>
+			<li><b>Les cartes de chaleurs</b> pour débusquer visuellement les affordances et les fausses
+				affordances des éléments d'une page, les zones les plus cliquées sont celles où
+				l'utilisateur s'arrête.</li>
+			<li><b>Les questionnaires libres</b> pour recueillir des retours sur des questions précises, ils
+				peuvent se constituer de question ouverte, de <abbr title="Question à choix multiple">QCM</abbr>,
+				d'échelles d'évaluations (noter de 1 à 7
+				le service..) dans l'idéal ces questionnaires doivent être courts pour enregistrer le plus
+				de
+				retours possible.</li>
+			<li><b>Les échelles scientifiques</b> les échelles Attrakdiff, UEQ sont conçues et reconnues
+				pour fiabilité. Elles sont souvent mises placer pour évaluer l'évolution de la perception du
+				dispositif avant et après modification.</li>
+			<li><b>Les retours utilisateur consigné</b> Les messageries de supports, les avis laissés et les
+				évaluations de départ de service sont une source d'input riche en points douloureux et
+				suggestions d’amélioration.</li>
+			<li><b>L'A/B test</b> s’applique à évaluer l’efficacité de 2 solutions, le serveur répartit les
+				utilisateurs sur 2 versions différentes et les outils analytiques permettent de comparer les
+				métriques et les taux de conversion aux objectifs des 2 versions. </li>
+		</ul>
+		<h2>La recherche qualitative</h2>
+		<ul>
+			<li><b>Entretien UX</b> a pour objectif de s'entretenir avec les utilisateurs ou les parties
+				prenantes et de recueillir, les points douloureux de leurs expériences, leurs besoins et les
+				insights</li>
+			<li><b>Groupe Focus</b> réuni un groupe de personnes qui échangent librement sur plusieurs
+				sujets donnés. Cette méthode permet d’analyser les différents points de vue et expériences
+				des usagers.</li>
+			<li><b>l’enquête de terrain</b> consiste à se rendre le point de vente, ou sur le lieu de
+				travail des usagers pour les rencontrer, échanger avec eux sur leurs motivations, leurs
+				besoins. Cela permet d'établir des persona et des cartes d'empathie et de récolter
+				différents inputs pour la recherche.</li>
+			<li><b>Observation de terrain</b> qui consiste à observer les utilisateurs et leurs usages sans être
+				perçu
+				comme enquêteurs, cela permet de voir l'usage réel des dispositifs avec moins de biais qu'en test
+				utilisateur, mais aussi moins d'input sur ce que pensent et perçoivent les utilisateurs.</li>
+			<li><b>La recherche secondaire</b> c'est l’ensemble des recherches UX déjà mené sur des sujets
+				similaires dont les rapports sont rendus accessibles, ils sont utiles pour faire des
+				préconisations ou pour des projets où le temps de recherche est limité</li>
+			<li><b>Test utilisateurs</b> Réaliser sur l’existant ou un prototype, ils servent à répondre
+				aux hypothèses et aux challenges émis lors de la conception. On donne un scénario et des
+				objectifs aux utilisateurs et on note leurs observations, leurs difficultés et les
+				interrogent sur certains éléments</li>
+			<li><b>Benchmark UX</b> contrairement au Benchmark mercatique qui s'appuie sur les services et
+				produits concurrents, le Benchmark UX cherche à identifier les services qui rencontrent des
+				problématiques similaires et analyser les solutions mises en place. Par exemple, un service
+				de vente de couche par abonnement peut prendre en Benchmark les services d'abonnement de
+				café.
+			</li>
+		</ul>
+		<h2>Cartographie des méthodes de recherche UX</h2>
+		<img src="/assets/article-recherche-ux-cartographie-des-moyens-de-recherche.webp" loading="lazy"
+			alt="Cartographie des méthodes sur les axes besoin/usage et quantitative/qualitative" />
+		<h2>Les approches de rendu</h2>
+		<p class="sans-espacement">Pour regrouper les recherches et les rendre exploitables par les équipes et les
+			commanditaires,
+			il
+			y a plusieurs options :</p>
+		<ul>
+			<li><b>L'atomic Research</b> consiste à consigner les retours et les insights de la recherche de
+				manière uniformisée et taguée de sorte à constituer une grande base de connaissances où il
+				est facile et rapide de faire ressortir les informations sur un sujet donné.</li>
+			<li><b>Les livrables propres</b>, plus traditionnel et professionnel lorsque ces derniers sont
+				demandés par les commanditaires. La qualité graphique, d'explication, est plus longue à
+				produire et ne se focalise pas sur l'essentiel. Il est recommandé de standardiser ce type de
+				livrable pour optimiser les temps de projets </li>
+			<li><b>Les livrables Lean</b> Le Lean UX, a pour précepte de réduire les livrables pour se
+				concentrer davantage sur les résultats, aller à l'essentiel pour que la passation entre les
+				équipes de recherche et de conception soit la plus fluide possible.</li>
+		</ul>
+		<h2>Les livrables</h2>
+		<ul>
+			<li><b>L'expérience Map</b> c'est la cartographie de l'expérience utilisateur. Elle permet de
+				retracer le parcours utilisateur du début à la fin par étapes, dans lesquels sont spécifiées
+				les points douloureux, point positif, les insights, les objectifs, les interactions et les
+				émotions. L'objectif est de donner une vue d'ensemble, de rendre visible une expérience et
+				de définir les challenges pour les équipes de conception UX.</li>
+			<li><b>L'user journey</b> ne vise pas à rendre compte de l'usage réel d'un produit ou d'un
+				service, mais à donner un parcours utilisateur idéal en identifiant les multiples points de
+				contact.</li>
+			<li><b>Les persona</b> sont des personnes fictives représentatives des différents segments
+				d'utilisateurs, on note dans leurs descriptions une démographie, leurs besoins, objectifs et
+				point douloureux.</li>
+			<li><b>Product design value canva</b> Est un élément important de la vision product, il se
+				compose de 2 parties, la partie utilisateur avec les bénéfices attendus, les besoins et les
+				points douloureux. D'une autre part, la partie proposition de valeur qui répond à ces
+				attentes avec les produits/services proposés, les bénéfices d'usages, les résolutions de
+				problèmes et des solutions.</li>
+			<li><b>Carte d’emphatique</b> est un élément de synthèse visuel d'un persona ou d'un utilisateur,
+				qui se concentre sur les sens : ce que la personne dit et fais, ce qu'elle entend, ce
+				qu'elle pense et ressent, ce qu'elle voit, mais aussi les points douloureux et les points
+				positifs.</li>
+		</ul>
+	</div>
+</LayoutArticle>

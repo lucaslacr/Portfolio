@@ -1,0 +1,148 @@
+---
+import LayoutArticle from "../../layouts/LayoutArticle.astro";
+---
+
+<LayoutArticle
+	title="L'audit UX"
+	metadata="20 janvier 2023 · 5 min"
+	description="Pour évaluer l'utilisabilité d'un dispositif, il existe 2 méthodes : le test utilisateur et l'audit UX. Cette dernière repose sur des critères scientifiques appelés Heuristiques. Elle permet de débusquer les problèmes que peuvent rencontrer les utilisateurs"
+>
+	<div>
+		<p>
+			Pour évaluer l'utilisabilité d'un dispositif, il existe 2 méthodes : le test utilisateur et
+			l'audit UX.<br>
+			Cette dernière repose sur des critères scientifiques appelés Heuristiques. Elle permet de
+			débusquer
+			les problèmes que peuvent rencontrer les utilisateurs et de proposer des solutions. L'Audit UX
+			est souvent utilisé pour établir des "Quick Fix", des points d'améliorations faciles sur une
+			interface pour
+			obtenir de meilleurs taux de conversions. C'est également une manière de vérifier une conception
+			avant
+			sa production.
+		</p>
+		<h2>Les différentes approches Heuristiques</h2>
+		<p>Pour évaluer une interface ou un dispositif, il existe une dizaine d'approches d’heuristiques
+			différente, ici, nous allons voir les plus communes et les plus représentatives de leurs
+			positionnements</p>
+		<ul>
+			<li><b>Bastien et Scapin</b>, sont sans aucun doute les Heuristiques les plus utilisées, car
+				elles
+				répondent au besoin général d’évaluation de <b>l'utilisabilité</b>. Elles visent à répondre
+				à la problématique suivante : À quel point il est
+				aisé d'accomplir des tâches simples pour un utilisateur qui découvre l'application.
+			</li>
+			<li><b>Colombo & Pasch's</b> Quant à elle, se focalise sur l'évaluation de <b>l’efficacité</b>
+				d'un dispositif. Une fois que les utilisateurs ont appris le design, avec quelle efficacité
+				ils peuvent effectuer une tâche.
+				Cette approche peut être utilisée dans les applications métier.</li>
+			<li><b>Arhippainen's</b> Vise à évalué davantage la <b>satisfaction</b>, s'il est plaisant
+				d'utiliser le dispositif et s'il est engageant. Il peut être utilisé dans les problématiques
+				de
+				divertissement et de gamification </li>
+		</ul>
+		<h2>Les Heuristiques de Bastien et Scapin</h2>
+		<ul>
+			<li><b>Guidage</b>
+				<ul>
+					<li><b>Regroupement et séparation</b>
+						Est-ce que les éléments qui se ressemblent sont regroupés et séparés des autres
+						? (Les éléments de navigation sont séparés du contenu de la page, les fraises sont
+						dans la rubrique fruits, les VTT ne sont pas avec les vélos de
+						ville, etc)
+					</li>
+					<li>
+						Est-ce que l'interface fait des <b>retours utilisateur</b> immédiat (message
+						d'erreur, de succès, annonce un temps de chargement, etc.)
+					</li>
+					<li>
+						<b>Lisibilité</b> (est-ce que le fil d’Ariane et visible,
+						est-ce que les textes sont suffisamment grands et contrastés pour être lu, etc.)
+					</li>
+					<li>
+						<b>Incitant</b> (est-ce que les intitulés sont clairs sur ce qu'ils regroupent,
+						est-ce que
+						les noms des boutons et les icônes sont explicites)
+					</li>
+				</ul>
+			</li>
+			<li><b>Charge de travail</b>
+				<ul>
+					<li>
+						<b>Brièveté</b> Être bref sur le nombre d'actions à accomplir pour arriver à un
+						objectif (limiter le nombre de champs et d’informations demandées pour créer un
+						compte ou passer une commande)
+					</li>
+					<li>
+						<b>Concision</b> Transmettre l'information avec un nombre limité de mots
+					</li>
+					<li>
+						<b>Densité de l'information</b>, Avoir une mise en page et une structuration
+						minimaliste pour permettre à l'utilisateur de scanner rapidement la page et de
+						trouver les éléments qu'il l’intéresse
+					</li>
+				</ul>
+			</li>
+			<li><b>Contrôle explicite</b>
+				<ul>
+					<li>
+						<b>Expliciter les actions de l'utilisateur</b>, l'interface doit traiter les actions
+						que lui demande l'utilisateur et ceux seulement lorsqu'il le demande.
+					</li>
+					<li>
+						<b>Contrôle utilisateur</b>, L'utilisateur doit avoir le contrôle du système :
+						annuler une action, mettre en pause, fermer une modale, etc.
+					</li>
+				</ul>
+			</li>
+			<li><b>Adaptabilité</b>
+				<ul>
+					<li>
+						<b>Flexibilité</b> S'adapter aux usages des utilisateurs (terminaux mobile et
+						bureau, mode de navigation divers, contextes d'usages, etc.)
+					</li>
+					<li>
+						<b>Expérience utilisateurs</b> L'interface doit s'adapter aux différents niveaux de
+						maîtrise des utilisateurs : fournir des raccourcis pour les utilisateurs
+						expérimentés,
+						une FAQ, tutoriel ou une guidance explicite pour les utilisateurs novices, etc.
+					</li>
+				</ul>
+			</li>
+			<li><b>Gestion des erreurs</b>
+				<ul>
+					<li>
+						<b>Préventions des erreurs</b>, limiter les erreurs en explicitant en amont les
+						exigences du système : ex mentionner et compter les nombres de caractères requis pour
+						créer un mot de passe, donner la taille max et le format pour l'envoi d'un fichier.
+					</li>
+					<li>
+						<b>Qualité des messages d'erreurs</b> Le système fournit-il un message d'erreur
+						clair et précis qui permette facilement à l’utilisateur de la résoudre ?
+					</li>
+					<li>
+						<b>Correction des erreurs</b> Le système, suggère-t-il les corrections des erreurs ?
+						ex : lors d'une recherche avec un mot mal orthographié, affiche une page 404 avec
+						une possibilité de continuer sa navigation ?
+					</li>
+				</ul>
+			</li>
+			<li><b>Homogénéité & Cohérence</b> Les interfaces présentent les éléments et le nommage de ces
+				derniers de manière constante dans l'intégralité de l'application ?
+			</li>
+			<li><b>Signifiance des codes et dénominations</b> Est-ce que la sémantique des icônes et des
+				couleurs sont représentatifs de ce qu'ils symbolisent ? ex : un message de succès est affiché
+				en vert, l'icon loupe et utilisé pour effectuer une recherche, etc.</li>
+			<li><b>Compatibilité</b> L'application prend elle en compte les capacités des utilisateurs pour
+				effectuer une tâche, pour éviter à l'utilisateur des charges cognitives supérieur :
+				s'assurer d'utiliser son référentiel plutôt qu'utiliser des termes dont il va devoir
+				trouver la définition, utiliser les mêmes systèmes de mesures, de calendrier, langues, etc.
+			</li>
+		</ul>
+		<h2>Restitution et forme de l'audit</h2>
+		<p>Un audit est un livrable, il est nécessaire qu'il soit clair, structuré, concis, complet,
+			découpable et
+			orienté solutions pour pouvoir être traité facilement par les équipes de design et de
+			développement.</p>
+		<img src="/assets/article-audit-ux.webp" loading="lazy" alt="Exemple de présentation d'audit UX" />
+	</div>
+</LayoutArticle>
