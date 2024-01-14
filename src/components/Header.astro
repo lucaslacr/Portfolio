@@ -9,7 +9,7 @@ const currentPath = pathname.slice(1);
 <div class="fond-sombre">
 	<header>
 	  <div id="menu">
-		<a href="/" aria-label="Accueil - Logo de Lucas"><img src={Logo.src} aria-hidden="true" alt="Accueil - Logo de Lucas" /></a>
+		<a href="/" ><img src={Logo.src} alt="Accueil - Logo de Lucas" /></a>
 		<nav class="menu-bureau">
 		  <ul>
 			<li><a class={currentPath === "articles" ? "active" : ""} href="/articles">Articles</a></li>
@@ -17,7 +17,7 @@ const currentPath = pathname.slice(1);
 			<li><a class={currentPath === "a-propos" ? "active" : ""} href="/a-propos">À propos</a></li>
 		  </ul>
 		</nav>
-		<button class="menutap" id="toopen" aria-haspopup="true" aria-control="menu-content"><img src={IconMenu.src}
+		<button class="menutap" id="toopen" aria-haspopup="true" aria-controls="menu-content"><img src={IconMenu.src}
 			alt="Ouvrir le menu" /></button>
 		<div class="menu-mobile" id="menu-content" role="dialog" aria-modale="false">
 		  <div class="mobilehead">
