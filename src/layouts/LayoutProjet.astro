@@ -6,10 +6,10 @@ import "../components/Apparence.astro";
 
 interface Props {
   title: string;
-  metadata: string;
   description: string;
 }
-const { title, metadata, description } = Astro.props;
+const { title, description } = Astro.props;
+
 ---
 
 <!doctype html>
@@ -23,21 +23,8 @@ const { title, metadata, description } = Astro.props;
   </head>
   <body>
     <Header />
-    <main id="contenu">
-      <div class="fond-sombre">
-        <section class="hero-article">
-          <div class="colonnes">
-            <div class="colonne">
-              <h1>{title}</h1>
-              <p class="metadonnee-article">{metadata}</p>
-            </div>
-          </div>
-        </section>
-      </div>
-      <section class="conteneur-article">
+    <main id="contenu">      
         <slot />
-        <FinArticle />
-      </section>
     </main>
   </body>
   <Footer />

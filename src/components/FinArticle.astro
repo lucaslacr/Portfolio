@@ -1,5 +1,4 @@
 ---
-import Logo from "../assets/logo.svg";
 import Commentaire from "../assets/message.svg";
 import Chevron from "../assets/chevron.svg";
 const pathname = new URL(Astro.request.url).pathname;
@@ -62,8 +61,7 @@ const currentPath = pathname.slice(1); // remove the first "/"
 	<div class="ensemble" style="display: none;">
 		<label for="page">Page</label>
 		<textarea id="page" name="page" rows="1" cols="33" maxlength="240"
-			>{currentPath}</textarea
-		>
+			>{currentPath}</textarea>
 	</div>
 	<button type="submit" class="primaire">Publier le commentaire</button>
 </form>

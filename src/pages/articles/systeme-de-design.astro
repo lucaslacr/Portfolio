@@ -1,0 +1,176 @@
+---
+import LayoutArticle from "../../layouts/LayoutArticle.astro";
+---
+
+<LayoutArticle
+	title="Qu'est-ce qu'un système de design ?"
+	metadata="8 septembre 2023 · 4 min"
+	description="Les systèmes de design sont devenus un élément incontournable pour la conception de produits numérique comme physique. De la signalétique routière aux applications, ils font partie de notre quotidien."
+>
+<p>
+	Les systèmes de design sont des librairies d'éléments réutilisables : Titre, case à cocher, bouton, etc.
+	Ces
+	composants et leur utilisation répondent à des règles fournies dans une documentation. Mais
+	alors pourquoi ne peut-on pas s'en passer sur des projets à vocation de durer et porter étendu. Elles
+	sont
+	le garant de la cohérence des écosystèmes. Sans elles, se repérer et maintenir des sites et des
+	plateformes
+	seraient chronophages et impensables.</p>
+<p> Imagier, si à chaque fois que l'on construit une route, on se pose
+	la
+	question du style et de la position, du propos de chaque panneau. Si on se mettait de temps à autre à
+	faire
+	des signalisations
+	de limitation de vitesse, parfois bleu, rouge, sur un support carré, circulaire. Circuler serait une
+	tâche
+	plus complexe et choisir l’aspect de signalisation serait des décisions à n'en plus finir.
+</p>
+<h2>Les systèmes de design et leurs avantages</h2>
+
+<p>Avec le système de design, les éléments sont plus clairs. Un panneau bleu, c'est l'autoroute, un marron
+	les
+	lieux culturel, un rectangulaire entouré de rouges une ville. C'est un peu pareil du côté numérique. Un
+	bouton principal à tel aspect, il y a un nombre de couleurs limité et dont l'usage est défini.</p>
+<p>Une des particularités des systèmes de design du numérique et leur vocation à évoluer perpétuellement. Là
+	où
+	le Code de la route n’évolue très peu sur son aspect visuel et sémantique. Les sites changent de nom,
+	de typographies, de couleurs.</p>
+<img src="/assets/article-system-design-central.webp" loading="lazy"
+	alt="Le système de design est central, il s'applique au : applications, sites web, newsletters..." />
+
+<h2>Les principes de design</h2>
+<p>
+	Un principe de design, c'est une règle à laquelle obéit l'ensemble du système. Par exemple, site mon
+	principe est le responsive ou le mode nuit, tous mes composants et mes maquettes devront prendre en
+	compte
+	ces définitions. Pour certain concepteur, les principes de design doivent être mesurables. Ainsi, on
+	passerait de "responsive" à "s'affiche de manière optimale sur des écrans de 320px à 1400px".</p>
+<img src="/assets/article-system-design-arbre.webp" loading="lazy"
+	alt="Arborescence d'un système de design : Développement, design d'interfaces, contenu, process" />
+
+<h2>Règles de contenus</h2>
+<p>Une interface, c'est aussi beaucoup de contenus et d'intitulés. Pour conserver une cohérence sur
+	l'ensemble
+	d'un écosystème, des règles d'écritures sont transmises et appliquées par l'ensemble des contributeurs.
+</p>
+<p>Utilise-t-on un ton plus amical ou corporate, énergique ou posé, accessible ou élitiste, le vouvoiement
+	ou le
+	tutoiement, Continuer ou continuez. Ces décisions sont souvent prises en fonction des valeurs de la
+	marque.
+	Si on conçoit un système de design pour une banque ou une application à destination des auditeurs d'une
+	radio pop, notre manière d'écrire sera radicalement différente.</p>
+<h2>Les variables de design</h2>
+<p>Fréquemment caché derrière l’appellation opaque "Design Token", les variables de design renferment des
+	valeurs. Par
+	exemple, la variable "Couleur principale" peut contenir la couleur verte. Ainsi, je peux utiliser la
+	variable dans toutes mes maquettes et sur mon site. Lorsque je souhaite changer les couleurs de mon
+	site, je
+	n'ais qu'à modifier le contenu de ma variable. Cette petite modification se répercutera sur l'ensemble
+	de mes
+	créations.</p>
+<p>Maximiser son recours facilite le maintiens dans le temps du système design. Les variables s'appliquent à
+	de nombreux éléments :</p>
+<ul class="interval-reduit">
+	<li>Couleurs</li>
+	<li>Style de bordure</li>
+	<li>Spécificité d'une ombre portée</li>
+	<li>Taille d'un arrondi</li>
+	<li>Réglages d'une typographie</li>
+	<li>Paramètres d'une transition</li>
+</ul>
+<h3>Nommer ces variables</h3>
+<p>Bien nommer une variable, c'est penser à sa clarté et à sa cohérence de structure avec celles déjà
+	existantes. On peut appeler ces variables de manière minimaliste avec cette structure :</p>
+
+<img src="/assets/anatomie-variable-design.webp" loading="lazy"
+	alt="Composition d'une variable de design : nom de la variable et de valeur" />
+
+<h2>Les éléments du système de design </h2>
+
+<h3>Bloc contenu</h3>
+<ul class="interval-reduit">
+	<li>Liste à puce</li>
+	<li>Mise en exergue</li>
+	<li>Accordéon (ou dépliant)</li>
+	<li>Tableau</li>
+	<li>Citation</li>
+	<li>Image avec légende</li>
+	<li>Carrousel d'images</li>
+</ul>
+<h3>Lien et bouton</h3>
+<ul class="interval-reduit">
+	<li>Bouton primaire</li>
+	<li>Bouton secondaire</li>
+	<li>Bouton tertiaire</li>
+	<li>Lien</li>
+</ul>
+<h3>Navigation</h3>
+<ul class="interval-reduit">
+	<li>Haut de page</li>
+	<li>Pied de page</li>
+	<li>Menu</li>
+	<li>Fil d'Ariane</li>
+	<li>Pagination</li>
+	<li>Moteur de recherche</li>
+	<li>Tabulation de navigation</li>
+</ul>
+<h3>Formulaire</h3>
+<ul class="interval-reduit">
+	<li>Champs texte</li>
+	<li>Label</li>
+	<li>Zone de texte</li>
+	<li>Message d'erreur et de succès</li>
+	<li>Case à cocher</li>
+	<li>Bouton radio</li>
+	<lI>Commutateur</lI>
+	<li>Sélectionneur d'interval</li>
+	<li>Groupe de bouton</li>
+	<li>Champs selection de valeur</li>
+	<li>Champs avec bouton</li>
+	<li>Facette activable</li>
+</ul>
+<h3>Informatif</h3>
+<ul class="interval-reduit">
+	<li>Tag d'information</li>
+	<li>Bandeau d'information</li>
+	<li>Message d'information (critique, neutre, positif)</li>
+	<li>Indicateur de chargement</li>
+</ul>
+<h3>Modales</h3>
+<ul class="interval-reduit">
+	<li>Modale centrale</li>
+	<li>Volet latéral</li>
+	<li>Alert Toast</li>
+</ul>
+<h3>Les tuiles</h3>
+<ul class="interval-reduit">
+	<li>Tuiles de produit</li>
+	<li>Tuiles de blog</li>
+</ul>
+<h3>Sections</h3>
+<ul class="interval-reduit">
+	<li>Hero (première section d'une page)</li>
+	<li>Bloc de mise en avant de la newsletter</li>
+	<li>Bloc de remonté de produit</li>
+	<li>etc.</li>
+</ul>
+<h3>Ressources</h3>
+<ul class="interval-reduit">
+	<li>Les icônes</li>
+	<li>Les illustrations / photos</li>
+</ul>
+<h2>La documentation</h2>
+<p>
+	Pour échanger et transmettre les informations entre les métiers, les systèmes de design s'équipent de
+	documentation. Cette dernière regroupe l'aspect du composant, les règles d'usages, des liens éventuels
+	vers
+	des référentiels et son code pour être utilisé rapidement les équipes de développements.
+</p>
+<img src="/assets/article-system-design-documentation.webp" loading="lazy"
+	alt="Documentation de composants commutateur" />
+
+<p>
+	Pour s'inspirer de ces systèmes de design, le site <a href="https://component.gallery/" target="_blank"
+		rel="nofollow">Component Gallery</a> répertorie un certain nombre d'entre eux.
+</p>
+</LayoutArticle>

@@ -1,0 +1,175 @@
+---
+import LayoutProjet from "../../layouts/LayoutProjet.astro";
+---
+
+<LayoutProjet
+	title="Le Fossile Magique"
+	description="Notre projet de master 2 a pour objectif de créer un dispositif interactif dans le champ des industries	interactives et culturels"
+>
+<div class="fond-sombre">
+	<section class="hero-article">
+	  <h1>Le Fossile Magique</h1>
+	  <div class="colonnes">
+		<div class="colonne">
+		  <div class="titre-projet">Contexte</div>
+		  Projet de Master 2 DGI à l'UPHF<br>
+		  Septembre 2021 à juin 2022
+		</div>
+		<div class="colonne">
+		  <div class="titre-projet">Équipe</div>
+		  <a href="https://www.behance.net/VianneyChantry" target="_blank">Vianney Chantry</a>,
+		  <a href="https://www.behance.net/talal_afyouni" target="_blank">Talal Afyouni</a>
+		</div>
+		<div class="colonne">
+		  <div class="titre-projet">Distinction</div>
+		  Primé à CréaTalents 2022
+		</div>
+		<div class="colonne">
+		  <div class="titre-projet">État</div>
+		  Archivé
+		</div>
+	  </div>
+	</section>
+  </div>
+  <section class="conteneur-article">
+	<p>Notre projet de master 2 a pour objectif de créer un dispositif interactif dans le champ des industries
+	  interactives et culturels. Nous avons choisi de travailler sur la muséographie de la paléontologie en
+	  choisissant la scénographie de galerie de Paris. Une grande partie de ce projet a consisté à mener une
+	  recherche auprès de parties prenantes, d’analyse de l'existant, de test utilisateur et recherche de
+	  documentation sur la gamification et la gestion de projet UX. </p>
+
+	<h2>Le serious game</h2>
+	<div class="container">
+	  <iframe loading="lazy" class="video" width="720" height="405"
+		src="https://www.youtube-nocookie.com/embed/FxHL6jjPMeo" title="YouTube video player" frameborder="0"
+		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+		allowfullscreen></iframe>
+	</div>
+
+	<p>La galerie de paléontologie a ouvert ses portes à la fin du 19ème siècle. C'est un lieu historique où la
+	  scénographie a peu évolué au cours des siècles. Pour rendre la visite plus interactive tout en conservant la
+	  muséographie actuelle, nous avons développé une web-application narrative pour les visiteurs.
+	</p>
+	<p>Lorsque l'on visite une galerie, on est amené à lire beaucoup d'encarts, ce qui est fastidieux et n'est pas
+	  toujours très adapté au jeune public. Nous avons conçu une application permettant de visiter la galerie à
+	  travers des activités pour apprendre des notions de paléontologie. Une affiche nous incite à utiliser
+	  l'application dès notre arrivée dans la galerie. On accède à la web-app qui nous invite à suivre une
+	  histoire et des activités à travers le musée.</p>
+
+	<h2>Méthodes et conduite de projet</h2>
+	<img src="~assets/projet-lefossilemagique-methode-1.webp" loading="lazy" alt="Schéma Double diamant du projet" />
+
+	<p>
+	  Le premier semestre du projet a été mené avec la méthode du <Nuxt-link to="/articles/le-design-thinking">design
+		thinking</Nuxt-link> avec le double diamant. Dans la
+	  phase exploration, nous avons cartographié, l'existant : Dispositifs muséaux innovants, Application de
+	  vulgarisation et d'apprentissage, Contenu et dispositif portant sur la science de la Paléontologie.
+	  <br><br>
+	  Nous avons rédigé un protocole d'entretien pour échanger avec les professionnels de la muséographie et de la
+	  paléontologie, ces interviews ont été menées en visioconférence et les verbatims, idées et remarques émises
+	  ont été
+	  consignées dans un tableau.
+	  <br><br>
+	  Nous avons également mené du shadowing, en visitant les Musées d'histoire naturelle de Paris, Lille et
+	  Bruxelles, nous avons pu observer les comportements, le type de publique et interroger certains visiteurs
+	  pour recueillir de la matière sur la motivation et la perception des visiteurs.
+	  <br><br>
+	  Cette observation s'est suivie de plusieurs exercices d'idéations. À ce moment-ci, plusieurs pistes ont été
+	  envisagées : construire une borne interactive, créer un audioguide, concevoir une application de visite
+	  gamifiée, etc. Le choix s'est porté sur cette dernière, ce dispositif permet de mettre en avant la scénographie
+	  déjà existante de la galerie. D'autres exercices d'idéation, nous ont permis de choisir le contenu
+	  abordé, est le musée sur lequel nous allions travailler.
+	  <br><br>
+	  Le dispositif de notre projet étant établi, nous nous sommes attelés à la réalisation de plusieurs
+	  prototypes papier pour proposer une logique de navigation et d’interaction avec les activités. La solution
+	  retenue était la suivante : un écran d'onboarding pour présenter l'application, suivie d'une carte avec les
+	  différentes activités disponibles. Cette version a été réalisée sur Figma pour être testé dans une salle qui
+	  schématise la galerie du musée, pour simuler les déplacements des utilisateurs.
+	  <br><br>
+	  Ces tests utilisateurs ont été riches en apprentissage, nous les avons consignés et nous avons établie des
+	  plans d'action
+	  pour parer au problème rencontré dans le V1 :
+	<ul>
+	  <li>Problème de compréhension de la promesse d'expérience → changement d'onboarding</li>
+	  <li>Interactions de certains jeux sont qualifiées de compliquer → simplification des interactions des jeux
+	  </li>
+	  <li>Problème d'engagement → Élaboration de narration et plus de gamification</li>
+	  <li>Trop de personnages différents dans l'application → Un seul protagoniste </li>
+	</ul>
+	<br><br>
+
+	En janvier, nous sommes lancés dans la Delivery, mais nous nous sommes vite rendus compte que ce n'était pas
+	la bonne méthode, il y avait trop d'inconnu et de risque de développer des parties qui n'aurait pas fonctionné
+	auprès du public. Nous avions besoins de faire régulièrement des tests utilisateur et de l'idéation sur des
+	parties de l'application. Nous nous sommes lancés en Discovery, cette méthode permet de réduire les risques et
+	les incertitudes grâce aux design sprints et aux 6 phases (alignement, affinage, validation, recherche,
+	idéation, prototypage).
+	</p>
+	<img src="~assets/experience-map.webp" loading="lazy" alt="Expérience map issue des tests utilisateurs" />
+	<p>La version 2 de l'application étant développé, nous avons réalisé des tests utilisateur au musée institue
+	  avec des réels visiteurs, nous avons dressé cette expérience map avec leurs retours. Ce test de plus grande
+	  ampleur nous as permis de sortir piste d’amélioration pour une future V3</p>
+
+	<h2>Narration</h2>
+	<p>Notre storytelling transforme le visiteur en héros de l'histoire, c'est la première dynamique d'engagement
+	  que l'utilisateur rencontre.<br>
+	  Mary, jeune paléontologue, découvre un fossile d'où l'esprit du temps s'échappe. Celui-ci ouvre une faille
+	  qui menace le musée. <br>L'utilisateur doit aider Mary à refermer la faille en terminant les activités et en
+	  gagnant le duel final.<br>
+	  Le design à l'aspect doux et coloré, tout en restant dans une certaine sobriété, permet de créer un
+	  véritable engagement chez l'utilisateur. Il évite également de saturer l'écran d'éléments graphiques trop
+	  complexes.<br>
+	  Les personnages de Mary et de l'esprit ont été conçus pour être visuellement sympathiques et attachants.
+	  Mary permet par ailleurs la personnification du narrateur qu'on retrouve au fil des activités.
+
+	</p>
+	<h2>Gamification</h2>
+	<p>
+	  Pour donner envie aux visiteurs de terminer l'histoire et permettre l'apprentissage par le jeu, notre
+	  application a recours à 5 leviers d'engagement : L'envie de progression, l'immersion, l'autonomie, la
+	  curiosité et le besoin de se dépasser. <br>L'envie de progression est appuyée par la collection de fragments
+	  du fossile à chaque activité terminée et le fait de débloquer les activités suivantes jusqu'à l'esprit du
+	  temps.</p>
+	<p class="exergue">
+	  L'immersion est aussi un élément d'engagement de notre application, grâce aux audios, nous arrivons à
+	  plonger l'utilisateur dans une histoire fantaisiste. </p>
+	<p>L'application gère le besoin d'autonomie, en
+	  permettant
+	  à l'utilisateur d'être indépendant, de suivre l'histoire à son rythme, d'effectuer des choix qui auront une
+	  incidence sur la réussite du jeu. Le besoin de se dépasser est utilisé à chaque activité, ces dernières sont
+	  basées sur le modèle "apprentissage -> challenge/évaluation -> récompense".<br>Ce système est également
+	  utilisé avec le duel de fin
+	</p>
+	<h2>Notions abordées</h2>
+	<p>
+	  Nous avons sélectionné 3 notions qui étaient transposables à la vulgarisation et à la galerie de
+	  paléontologie.
+	<ul>
+	  <li>
+		<h3>Fossilisation</h3>Pour évoquer la notion de fossilisation, nous avons réalisé des vidéos narratives.
+		Elles sont entrecoupées d'activités interactives comme le nettoyage du fossile. La validation de cette
+		partie consiste à replacer les étapes de la fossilisation dans l'ordre.
+	  </li>
+	  <li>
+		<h3>Représentation des animaux</h3>La notion de représentation a été amenée sous forme d'une frise
+		accompagnée de narrations audio. Celle-ci contient des dessins au feutre de l'iguanodon. Le style
+		graphique sous forme de "dessin au feutre" rappelle à l'utilisateur qu'on parle de représentation
+		hypothétique de l'animal. Cette partie se termine par 3 questions permettant de vérifier les connaissances
+		des utilisateurs.
+	  </li>
+	  <li>
+		<h3>Évolution</h3>Pour illustrer l'évolution, nous avons suivi le cas du mammouth. Nous avons élaboré une
+		vidéo narrative ainsi qu'une frise. Celle-ci montre l'évolution d'une population de mammouths au cours du
+		temps. Les connaissances sont ici vérifiées par un "Vrai / Faux"
+	  </li>
+	</ul>
+	</p>
+	<h2>Le parcours utilisateur</h2>
+	<div class="container">
+	  <iframe loading="lazy" class="video" width="720" height="405"
+		src="https://www.youtube-nocookie.com/embed/Y-jdoUXC0_4" title="YouTube video player" frameborder="0"
+		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+		allowfullscreen></iframe>
+	</div>
+  </section>
+</LayoutProjet>

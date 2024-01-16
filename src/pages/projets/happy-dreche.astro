@@ -1,0 +1,118 @@
+---
+import LayoutProjet from "../../layouts/LayoutProjet.astro";
+---
+
+<LayoutProjet
+	title="Happy Drêche"
+	description="Happy Drêche disposait d’un site web sur la plateforme Wix.com, ce dernier nécessitait une refonte afin d’améliorer son attractivité."
+>
+<div class="fond-sombre">
+	<section class="hero-article">
+		<h1>Happy Drêche</h1>
+		<div class="colonnes">
+		  <div class="colonne">
+	<div class="titre-projet">Contexte</div>
+	Contrat freelance : refonte de site web
+  </div>
+  <div class="colonne">
+	<div class="titre-projet">Technologie</div>
+	Figma, Wordpress, Gutenberg, Leaflet js, Matomo
+  </div>
+  <div class="colonne">
+	<div class="titre-projet">Période</div>
+	janvier à février 2022
+  </div>
+  <div class="colonne">
+	<a href="https://happydreche.fr" class="lienapp" target="_blank">Visiter le site</a>
+  </div>
+		</div>
+	</section>
+</div>
+<section class="conteneur-article">
+<p>Happy Drêche est une association lilloise créée en 2018, elle lutte contre le gaspillage alimentaire d’une
+ressource méconnue : la drêche de brasserie. La drêche est collectée auprès de brasseurs artisanaux de la
+métropole et transformée pour composer des recettes gourmandes, saines et locales, distribuées en circuit
+court. Les produits proposés : snacking apéro, céréales, petit déjeuner, biscuits.
+</p>
+
+<h2>Le brief </h2>
+<p>
+Happy Drêche disposait d’un site web sur la plateforme Wix.com, ce dernier nécessitait une refonte afin
+d’améliorer son attractivité, sa lisibilité et l’accès rapide aux informations prioritaires : produits
+disponibles, lieux de vente, événements, contacts.
+<ul class="interval-reduit">
+<li>
+  Optimisation de l'architecture de l'information
+</li>
+<li>
+  Respect de la charte graphique (logo, colorimétrie, polices)
+</li>
+<li>
+  Accélération du site et amélioration de son référencement
+</li>
+<li>
+  Mettre en avant les réseaux sociaux de l'association
+</li>
+<li>
+  Former les salarié·e·s à l’utilisation du site
+</li>
+<li>
+  Cartographier les points de vente
+</li>
+<li>
+  Mobile friendly et cross navigateurs
+</li>
+<li>
+  Éco-conçu
+</li>
+<li>
+  RGPD friendly
+</li>
+</ul>
+</p>
+<h2>Architecture de l'information</h2>
+<img src="~assets/happy-dreche-adli.webp" loading="lazy"
+alt="Capture d'écran de l'atelier d'architecture de l'information du site Happy Drêche" />
+<p>Pour visualiser et échanger facilement sur les contenus et l'arborescence du site, nous avons utilisé la
+méthode OOUX. Elle permet d'identifier les contenus, donner leurs caractéristiques d'objets (lien, type , etc.)
+et de les répartir dans des pages et des sections. Cette méthode itérative optimise le temps passé sur
+l’établissement de l'architecture de l'information.</p>
+<h2>Maquettes</h2>
+<img src="~assets/happy-dreche-figma.webp" loading="lazy"
+alt="Capture d'écran d'une partie des maquette Figma du site Happy Drêche" />
+<p>Les maquettes du site, on était réalisé sur Figma avec des composants, des auto-layouts, une librairie de
+style, une grille de 12 colonnes. Cette configuration est élaborée pour uniformiser les styles pour le
+développement et de gagner du temps sur les modifications courantes : changer le style des titres N2,
+modifier l'ordre des liens dans le pied de page, etc. Pour les retours sur les maquettes, le commanditaire
+pouvait ajouter des commentaires sur les pages, ce qui fluidifie les échanges sur les modifications à
+apporter.
+</p>
+<h2>Choix techniques</h2>
+<p>Le site a fait l'objet d'une veille technologique, pour choisir le CMS qui allait être utilisé par
+l'association. Le CMS WordPress présente un back-office très intéressant, facile à gérer et complet,
+notamment avec Gutenberg, un éditeur de page intuitif, léger et libre. Ce back-office répondait plus aux
+besoins de gestion indépendante du site, de plus c'est celui qui nécessitait le moins de temps de
+production. Pour être en adéquation avec les valeurs de l'association, nous avons choisi d'utiliser des
+logiciels libres ou avec des licences très permissives de type MIT ou GNU. Le thème WordPress a été créé sur
+mesure, ce qui lui permet d'être à 100% optimisés, ne pas avoir de dépendance inutile, ni de codes non
+utilisés.
+
+<br><br>
+Pour comprendre les usages du site et les parcours utilisateurs, nous avons choisi l'outil Matomo qui est un
+outil libre et auto-hébergé ce qui permet à l'association de posséder et de ces données de visite et
+d'utilisation, ce dernier est configuré pour ne pas déposer de cookies et d'anonymiser les IP. Il n'y a pas
+d'autres scripts de traçage, ce qui permet une meilleure protection de la vie privée des utilisateurs du
+site et de s'affranchir de bandeau de consentement intrusif. Ces données sont utilisées pour appuyer
+l’amélioration continue.
+
+<br><br>
+Pour la carte des points de vente, nous avons utilisé Leaflet JS qui nous accorde une grande
+personnalisation de la carte, sur son apparence, sur les lieux, par exemple, on a choisi de mettre des
+icônes différentes pour les types de produit, sachets ou vrac.
+<br><br>Le référencement de ce site a eu recourt à l'extension Yoast a été employé pour mettre des titres
+intéressants du point de vue des recherches effectuées par les utilisateurs. Le sitemap du site a été
+déclaré aux moteurs Google et Bing (index d'Écosia, Qwant et Duckduckgo) pour une meilleure couverture
+d'indexation.
+</p>
+</section>
+</LayoutProjet>

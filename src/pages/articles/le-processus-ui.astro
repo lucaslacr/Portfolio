@@ -1,0 +1,101 @@
+---
+import LayoutArticle from "../../layouts/LayoutArticle.astro";
+---
+
+<LayoutArticle
+	title="Le Processus UI"
+	metadata="20 septembre 2022 · 4 min"
+	description="L'étape du design d'interface est une partie importante dans la conception, c'est là que le projet prend forme. Il fait aussi l'objet de nombreuses passations : entre l'équipe de recherche UX, entre le client puis avec les développeurs."
+>
+<p> L'étape du design d'interface est une partie importante dans la conception, c'est là que le
+	projet prend forme. Il fait aussi l'objet de nombreuses passations : entre l'équipe de recherche
+	UX, entre le client puis avec les développeurs. Et qui dit transmission, dit rigueur pour éviter
+	la perte d'informations et les retours en arrière. </p>
+<h2>1<span class="est-mauve">.</span> Rassembler les inputs</h2>
+<p class="sans-espacement">
+	Les inputs des projets traditionnels :
+<ul class="interval-reduit">
+	<li>Le cahier des charges</li>
+	<li>Les différents courriels échangés depuis</li>
+	<li>L'ancien site (dans le cas d'une refonte)</li>
+	<li>Un benchmark du secteur</li>
+</ul>
+</p>
+<p class="sans-espacement">
+	Dans les projets plus axés sur de la recherche UX et design thinking :
+<ul class="interval-reduit">
+	<li>Les wireflows</li>
+	<li>Les synthèses des ateliers de co-conception / design studio</li>
+	<li>Les Expériences Map</li>
+	<li>Un benchmark UX</li>
+	<li>Un document de spécification technique issue d'une <abbr
+			title="Assistance à Maîtrise d’Ouvrage ">AMOA</abbr></li>
+</ul>
+</p>
+<p>Rassemblez-les dans une page Figma ou Miro, n'hésitez pas à les découper, à les ré-organiser et à
+	les surligner pour mieux vous les approprier.</p>
+<h2>2<span class="est-mauve">.</span> Dessiner les wireframes</h2>
+<p>Quitter votre clavier et votre souris, vous n'en auriez pas besoin pour les wireframes, il est
+	recommandé de les faire à la main sans outils contraignants. N'utilisez pas non plus de canvas
+	de téléphone prêt à imprimer ou de règle pour tracer de ligne droite, c'est un exercice
+	d'idéation ! Prenez simplement une feuille blanche et un feutre 0.5 mm noir pour pouvoir être
+	bien visible lorsque les wireframes seront scannés.
+</p>
+<img src="/assets/article-design-ui-process-e2.webp" loading="lazy" alt="Wireframe" />
+
+<h2>3<span class="est-mauve">.</span> UI Kit et composants</h2>
+<p>
+<ul>
+	<li><b>Choisissez vos tailles de pages</b>, les plus fréquents sont 1440x1024 pour bureau et
+		360x800 pour le mobile. </li>
+	<li><b>Définissez la grille de votre maquette</b>, 12 colonnes avec des marges de 100px et des
+		gouttières de 20px. Pour le mobile, 4 colonnes, des marges de 25px et des gouttières de 5px.
+	</li>
+	<li><b>Identifiez les différents éléments</b> de votre wireframes et commencez votre <b>UI
+			Kit</b> : <br> Style des titres, textes, couleurs et élément (check box, input text,
+		bouton, etc.) <br>N'hésitez pas à créer des <b>variants</b> et utiliser de <b>l'auto-layout</b>
+		pour gagner du temps sur la mise en place sur les maquettes.
+	</li>
+	<li>Créer vos <b>composants</b> en utilisant votre UI Kit : <br> Header, footer, menu, card,
+		blocs spécifiques…</li>
+</ul>
+</p>
+<h2>4<span class="est-mauve">.</span> Maquettage</h2>
+<p>Reprenez-les wireframes en utilisant vos composants et votre UI Kit pour créer vos maquettes. Il
+	est fortement recommandé d'utiliser <b>l'auto-layout</b> pour gérer <b>l'espacement vertical</b>
+	de votre
+	page, cela permet d'intervertir facilement vos sections, mais principalement prendre en compte les
+	contraintes d'intégration web (css, flexbox). Pour une bonne harmonie, utilisez
+	les <b>multiples de 8</b> pour vos espacements : 16px, 32px, 40px, 64px, 72px, 96px, etc.</p>
+<p class="exergue">Il est essentiel de passer les maquettes en revue avec les critères d’accessibilité
+	du <abbr title="référentiel général d’amélioration de l’accessibilité">RGAA</abbr>. Les
+	corrections des problèmes d’accessibilités sont plus faciles à régler en amont qu'en aval du
+	développement.
+</p>
+
+<h2>6<span class="est-mauve">.</span> Validation par le commanditaire</h2>
+<p class="sans-espacement">Avant de partir en production, les maquettes doivent être validées par le
+	commanditaire, ce
+	processus peut s’avérer long :</p>
+<ul class="interval-reduit">
+	<li>Retours tardifs</li>
+	<li>Commentaires contradictoires de la part des différentes parties prenantes</li>
+	<li>Retours en arrière récurrents</li>
+	<li>Les reports de décisions</li>
+</ul>
+<p>
+	Pour éviter ces situations bloquantes et garder une fluidité dans le projet, il faut réunir toutes
+	les
+	parties prenantes commanditaires et mener une réunion de discussions et validation des maquettes.
+	L'occasion de mettre en valeur les solutions choisies par les designers, d'échanger, d'écouter et de
+	trancher ou de lancer une phase de test utilisateurs si le projet le permet.
+</p>
+
+<h2>7<span class="est-mauve">.</span> Notes pour les développeurs</h2>
+<p>Un certain nombre d'informations sur les éléments sont déjà documentées automatiquement dans le
+	projet Figma pour aider les développeurs dans l'intégration et le développement des pages.
+	Toutefois, certains éléments nécessitent plus de précisions : quel est le comportement du menu
+	(aux cliques ou au survol, etc.), les fonctionnalités des champs (auto-complétion, option des
+	champs textes, le contenu des listes déroulantes, etc.), les zones cliquables et le contenu des balises
+	d’accessibilité (Aria et Alt).</p>
+</LayoutArticle>
