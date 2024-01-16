@@ -20,6 +20,18 @@ const { title, description } = Astro.props;
 		<meta name="theme-color" content="#0B051E" />
 		<title>{title}</title>
 		<meta name="description" content={description} />
+
+		<meta property="og:title" content={title} />
+		<meta property="og:site_name" content="Lucas Lacroix" />
+		<meta property="author" content="Lucas Lacroix" />
+		<meta property="og:type" content="Portfolio" />
+		<meta property="og:description" content={description} />
+		<meta property="og:locale" content="fr_FR" />
+		<meta property="og:url" content="https://lucaslacroix.com/" />
+		<meta property="og:image" content="https://lucaslacroix.com/assets/og-icon.png" />
+		
+		<meta property="og:site_name" content="Agence de référencement Referenseo" />
+		
 	</head>
 	<body>
 		<a id="skip-main" href="#contenu"> Aller au contenu</a>
