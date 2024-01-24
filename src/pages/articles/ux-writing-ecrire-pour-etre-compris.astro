@@ -4,132 +4,257 @@ import LayoutArticle from "../../layouts/LayoutArticle.astro";
 
 <LayoutArticle
 	title="UX Writing, écrire pour être compris"
-	metadata="8 décembre 2023 · 3 min"
+	metadata="8 janvier 2024 · 5 min"
 	description="La maîtrise de la présentation est un atout pour mieux communiquer, inspirer, partager. Pour y parvenir, un bon cadrage et quelles règles de mise en page."
 >
-<p>
-	Quand on pense design, on pense interfaces, composants, icônes, mais jamais contenu ! Et pourtant le contenu
-	est essentiel dans nos interfaces et dans une expérience utilisateur réussite ! Comment écrire les intitulés
-	et les textes d'une interface ?
+	<p>
+		Quand on pense design, on pense interfaces, composants, icônes, mais
+		jamais contenu ! Et pourtant le contenu est essentiel dans nos
+		interfaces et dans une expérience utilisateur réussite ! Mais alors,
+		comment écrire les intitulés et les textes d'une page ?
+	</p>
 
-<h2>C'est quoi L'UX writing ?</h2>
-<p>
-	C'est la discipline, la profession qui consiste à <b>évaluer, rechercher, écrire et tester</b> les éléments
-	textuels des interfaces. Écrire pour être compris, cohérent et rassurer. Il ne faut pas la confondre avec le
-	Copywriting. Cette dernière consiste à écrire
-	pour convertir, c'est un dérivé du métier de "Conversion Rate Officer", le spécialiste de la conversion des
-	utilisateurs en clients pour les sites ecommerces.
-</p>
-<h2>Le Langage</h2>
-<p>Qu’es-ce que le Langage ? Cette questions est essentiel pour bien comprendre la fondation de l'UX Wring. Le
-	Language s'encre dans 2 éléments, le réel et le l'interlocuteur. </p>
-<p class="exergue">La Langue est une faculté non-iné de communication de mot image.</p>
+	<p>
+		Avant d'aborder les bonnes pratiques et les méthodes de l'UX Writer,
+		nous avons besoins de comprendre le fondamentale, la langue.
+	</p>
 
-<ul>
-	<li><b>Le référent</b> L'objet ou la chose en lui même</li>
-	<li><b>Le signifiant</b> Ça représentation, le son, le mot, le geste</li>
-	<li><b>Le signifié</b>Son concept mental</li>
-</ul>
-<p>
-	Mon référent ne varie pas mon signifiant peut-être multiple et dépend de mon locuteur. Un Aole Vera peut
-	avoir un signifiant différant en fonction de mon locuteur. Elle peut être "la plante d’intérieur, la plante
-	grasse, Aloe Vera ou aloe vera". Cette variation se compose de la langue du locuteur et de son niveau de
-	connaissance du sujet.
-	Le travail de l'UX Writer c'est de trouver le bon signifiant pour s'adresser au signifié qui existe dans la
-	mémoire de l'interlocuteur.
-</p>
+	<h2>Qu'est-ce que le Langage ?</h2>
+	<p>
+		Une langue est un système de signes (sons, symbols, gestes) structurés
+		et partagé par un groupe de personnes pour communiquer. Les langues sont
+		infinies et en évolution permanante, des mots, des expéssion nassaint,
+		le sens de certain évolut et d'autres disparaissement. Au sien d'une
+		même communauté de langue il exite d'autres groupes qui partage des
+		pronociations et des groupes mots.
+	</p>
+	<h2>Comment s'ancre la langue dans notre processus de communication ?</h2>
+	<p>
+		Ce processus s'articule avec 3 composantes :
+		<ul class="interval-reduit">
+			<li><b>Le référent</b> L'objet ou la chose en elle même</li>
+			<li>
+				<b>La représentation</b>(ou Le signifiant) ça pronociation, le
+				mot, le geste, sa représentation visuelle (dessin et
+				illustration)
+			</li>
+			<li>
+				<b>Le concept mental</b>(ou signifié) Ce qu'évoque le sujet pour
+				une personne.
+			</li>
+		</ul>
+	</p>
+	<img
+		src="/assets/article-writing-pomme.webp"
+		alt="Schéma avec le référent, la représentation et le concepte mentale"
+	/>
+	<p>
+		Mon référent ne varie pas. <br /> La représentation dépend de ma langue
+		et le concept mentals est propre au niveau et à l'angle de connaissance
+		du locuteur.
+	</p>
+	<h3>Identifier les sources d'incompréhension</h3>
+	<p>
+		En reprennant le shéma du "triangle sémiotique", on peut identifier 3
+		cas :
+		<ul>
+			<li>
+				<b>La non connaissance du référent</b> exemple : Je ne sais pas
+				ce qu'est un Litchi. Je n'en ai j'amais entendu parlé et si on
+				me le présentais cela serai pour moi une découverte.
+			</li>
+			<li>
+				<b>L'absence de connaisance de la représentation</b> exemple :
+				Je ne sais pas ce qu'est un GSM, pourtant je sais ce qu'est un
+				téléphone portable. Je les termes que j'associe au référence
+				peuvent être : mobile, téléphone, portable, iphone
+			</li>
+			<li>
+				<b>Ne pas connaître le concept mental</b>, Je sais ce qu'est une
+				pomme toute fois, j'ignore le sens bibile de cette dernière.
+			</li>
+		</ul>
+		<p>
+			Pour bien communiquer il est essentiel de connaitre sont
+			interlocuteur. Utiliser ses représentations et expliciter les
+			concepte mental et les référents don il n'as pas la connaissance.
+		</p>
+		<h2>C'est quoi L'UX writing ?</h2>
+		<p>
+			C'est la discipline, la profession qui consiste à <b
+				>évaluer, rechercher, écrire et tester</b
+			> les éléments textuels des interfaces. Écrire pour être compris,
+			être cohérent et rassurer.
+		</p>
 
-<h2>Quand recourir à UX Writing</h2>
-<p>C'est la problématique du métier, on y a recours souvent trop tard, lorsque les maquettes sont prêtes à
-	partir en développement. L'articulation entre le design d'interface et le design textuel doit s'établir en
-	même temps. "remplir les blancs" ne peut être un axe pertinent de travail.</p>
-<img src="/assets/article-writing-corepage.webp" loading="lazy"
-	alt="Model Core page - schéma avec les chemin d'entré, de sortie et les éléments d'une page" />
+		<h2>Quand recourir à UX Writing</h2>
+		<p>
+			C'est la problématique du métier, on y a recours souvent trop tard,
+			lorsque les maquettes sont prêtes à partir en développement.
+			L'articulation entre le design d'interface et le design textuel doit
+			s'établir en même temps. "remplir les blancs" ne peut être un axe
+			pertinent de travail.
+		</p>
+		<img
+			src="/assets/article-writing-corepage.webp"
+			loading="lazy"
+			alt="Model Core page - schéma avec les chemin d'entré, de sortie et les éléments d'une page"
+		/>
 
-<p>Le processus de création d'interface et d'écriture de texte débute à l'issue de l'élaboration de l'user flow
-	ou du schéma "Core design model page".
-	Les 2 designers peuvent s'accorder sur la forme que va prendre une information.</p>
+		<p>
+			Le processus de création d'interface et d'écriture de texte débute à
+			l'issue de l'élaboration de l'user flow (l'enchaienement des
+			différents écrans d'une application) ou du schéma "Core design model
+			page". Les 2 designers peuvent s'accorder sur les informations et la
+			forme qu'ils vont prendre sur les pages. La bonne information avec
+			au bon format et au bon moment.
+		</p>
 
+		<h2>Positionnement, le ton et la voix</h2>
+		<p>
+			Comment être cohérent sur l'ensemble d'un écosystème, sur les
+			courriels le site web et les différents supports de communication ?<br
+			/> Pour être constant, il faut d'abord dreser un système d'écriture
+			: Es-ce que nos écrit sont plutôt amicale ou coroprate ? et a quel
+			niveau... <br /> Pour se positionner sur ce cette identité Kinneret
+			Yifrah à établie 6 matrices à un axe :
+		</p>
+		<img
+			src="/assets/article-writing-matrice.webp"
+			loading="lazy"
+			alt="6 matrices à un axes de positionement de Kinneret Yifrah"
+		/>
 
-<h2>Positionnement, le ton et la voix</h2>
-<p>
-	tu/vous, matrice, limites
-</p>
+		<p>
+			Le positionement et le ton et la voix se consititue également par
+			des règles d'écritures
+			<ul class="interval-reduit">
+				<li>L'usage du tutoiement ou du vouvoiement</li>
+				<li>
+					La nomination des catégories d'interlocuteur, exemple :
+					client/utilisateur/usager/voyageur/influenceurs,
+					salarié/collaborateur,
+				</li>
+				<li>La nomination des produits et services</li>
+				<li>Les valeurs de l'entité</li>
+			</ul>
+		</p>
 
-<h2>Bonnes pratiques</h2>
-<h3>L’écriture conversationnelle</h3>
-<h3>Concision</h3>
-<p>Limiter les adverbes, que, verbes ternes</p>
-<h3>Abréviations, anglicismes et termes complexes
-	<h3>Cohérence</h3>
-	<p>logements, location, hébergement, produits </p>
-	ou métier
-</h3>
-<h3>Respecter les standards</h3>
-<p>Numéro de téléphone</p>
-<h3>Limiter conditionnel</h3>
-<h3>Formulation mal adroite</h3>
-<p>Conjonction de disjonction</p>
-<h3>Neutralité dans les zones sensibles</h3>
-<p>(argent, santé, vie)</p>
-<h3>Écrire les messages d’erreurs</h3>
-<p>S'il y a bien un endroit où un texte et crucial, c'est la rédaction des messages d'erreur. Elles font partie
-	de certain parcours utilisateur et elle peuvent être source de frustration et d'incompréhension. Pour ne pas
-	manquer leurs objectifs, ces messages doivent contenir de manière concise :</p>
-<ul class="interval-reduit">
-	<li>Ce qu'il s'est passé</li>
-	<li>Pourquoi cela s'est passé</li>
-	<li>Une solution ou un recours</li>
-	<li>Rassurer l'utilisateur</li>
-</ul>
-<h2>Comment évaluer les écrits</h2>
-<h3>Le test de mise en avant</h3>
-<p>Plus populaire sous le nom "teste su Stabilo", il consiste à demander aux utilisateurs de surligner tous les
-	contenus avec plusieurs feutres :</p>
-<ul class="interval-reduit">
-	<li><span class="souslignevert">Vert</span> pour ceux qu'ils comprennent très bien</li>
-	<li><span class="souslignejaune">Jaune</span> pour ceux qu'ils ne trouvent pas facile à comprendre</li>
-	<li><span class="sousligneorange">Orange</span> pour ceux qu'ils ne comprennent pas ou pas bien</li>
-	<li><span class="souslignemauve">Mauve</span> pour les parties qui leur font peur ou les bloquent</li>
-</ul>
-<h3>Les tests automatiques</h3>
-<p>Parmi aux figure le test de <a href="https://fr.wikipedia.org/wiki/Tests_de_lisibilit%C3%A9_Flesch-Kincaid"
-		target="_blank" rel="nofollow">Flesch Kincaid</a>. Il prend en compte le nombre de mots par phrase et le
-	nombre de syllabes par mots. Un outil maison qui permet de tester les mais qui peut aider à simplifier un
-	contenu c'est <a href="https://qualitexte.lucaslacroix.com/" target="_blank" rel="nofollow">QualiTexte</a>.
-	Annotation des </p>
-mettre en forme
+		<h2>Bonnes pratiques</h2>
+		<h3>L’écriture conversationnelle</h3>
+		<p>
+			C'est le concepte clé de l'UX Writing. Cette approche vise à se
+			rapporcher au maximun de la manière don nous parlons. L'objectifs,
+			être fluide, bien découper nos phrases et adopter une écriture
+			facile à commprendre.
+		</p>
+		<h4>Comment mettre la mettre en pratique ?</h4>
+		<p>
+			Dictez vos textes et écoutez les. Nos ordinateur sont équipé
+			nativement de ces technologie de saissie vocal et de lecteur de
+			texte. C'est un bon moyen de se rendre compte de la fuidité de ces
+			différents contenus.
+		</p>
+		<h3>Concision</h3>
+		<p>
+			Faire court, c'est prioriser et hyrachiser les informations contenus
+			dans les textes. <br />Pour y parvenir, on peut limiter les
+			adverbes, les verbes ternes et les proposition subordonnée qui
+			favorise les phrases très longues.
+		</p>
+		<h3>Abréviations, anglicismes et termes complexes</h3><h3>Cohérence</h3>
+		<p>logements, location, hébergement, produits</p>
+		 ou métier
+		<h3>comprendre en quelques mots</h3>
+		<h3>Respecter les standards</h3>
+		<p>Numéro de téléphone</p>
+		<h3>Limiter conditionnel</h3>
+		<h3>Formulation mal adroite</h3>
+		<p>Conjonction de disjonction</p>
+		<h3>Neutralité dans les zones sensibles</h3>
+		<p>(argent, santé, vie)</p>
+		<h3>Écrire les messages d’erreurs</h3>
+		<p>
+			S'il y a bien un endroit où un texte et crucial, c'est la rédaction
+			des messages d'erreur. Elles font partie de certain parcours
+			utilisateur et elle peuvent être source de frustration et
+			d'incompréhension. Pour ne pas manquer leurs objectifs, ces messages
+			doivent contenir de manière concise :
+		</p>
+		<ul class="interval-reduit">
+			<li>Ce qu'il s'est passé</li>
+			<li>Pourquoi cela s'est passé</li>
+			<li>Une solution ou un recours</li>
+			<li>Rassurer l'utilisateur</li>
+		</ul>
+		<h2>Comment évaluer les écrits</h2>
+		<h3>Le test de mise en avant</h3>
+		<p>
+			Plus populaire sous le nom "teste su Stabilo", il consiste à
+			demander aux utilisateurs de surligner tous les contenus avec
+			plusieurs feutres :
+		</p>
+		<ul class="interval-reduit">
+			<li>
+				<span class="souslignevert">Vert</span> pour ceux qu'ils
+				comprennent très bien
+			</li>
+			<li>
+				<span class="souslignejaune">Jaune</span> pour ceux qu'ils ne
+				trouvent pas facile à comprendre
+			</li>
+			<li>
+				<span class="sousligneorange">Orange</span> pour ceux qu'ils ne
+				comprennent pas ou pas bien
+			</li>
+			<li>
+				<span class="souslignemauve">Mauve</span> pour les parties qui
+				leur font peur ou les bloquent
+			</li>
+		</ul>
+		<h3>Les tests automatiques</h3>
+		<p>
+			Parmi aux figure le test de <a
+				href="https://fr.wikipedia.org/wiki/Tests_de_lisibilit%C3%A9_Flesch-Kincaid"
+				target="_blank"
+				rel="nofollow">Flesch Kincaid</a
+			>. Il prend en compte le nombre de mots par phrase et le nombre de
+			syllabes par mots. Un outil maison qui permet de tester les mais qui
+			peut aider à simplifier un contenu c'est <a
+				href="https://qualitexte.lucaslacroix.com/"
+				target="_blank"
+				rel="nofollow">QualiTexte</a
+			>. Annotation des
+		</p>
+		 mettre en forme La micro copie Facile à lire et à comprendre
+	</p>
+	<style>
+		.souslignejaune {
+			color: #624304;
+			background-color: #fff0a5;
+			padding: 2px 4px;
+			border-radius: 4px;
+		}
 
-La micro copie
+		.sousligneorange {
+			color: #442a03;
+			background-color: #facfaa;
+			padding: 2px 4px;
+			border-radius: 4px;
+		}
 
-Facile à lire et à comprendre </p>
-<style>
-	.souslignejaune {
-		color: #624304;
-		background-color: #fff0a5;
-		padding: 2px 4px;
-		border-radius: 4px;
-	}
-	
-	.sousligneorange {
-		color: #442a03;
-		background-color: #facfaa;
-		padding: 2px 4px;
-		border-radius: 4px;
-	}
-	
-	.souslignemauve {
-		color: #140546;
-		background-color: #cfc3f7;
-		padding: 2px 4px;
-		border-radius: 4px;
-	}
-	
-	.souslignevert {
-		color: #04621b;
-		background-color: #bef0de;
-		padding: 2px 4px;
-		border-radius: 4px;
-	}
+		.souslignemauve {
+			color: #140546;
+			background-color: #cfc3f7;
+			padding: 2px 4px;
+			border-radius: 4px;
+		}
+
+		.souslignevert {
+			color: #04621b;
+			background-color: #bef0de;
+			padding: 2px 4px;
+			border-radius: 4px;
+		}
 	</style>
 </LayoutArticle>

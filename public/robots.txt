@@ -1,1 +1,15 @@
+# Configuration principale
+User-Agent: *
+Allow: /
+Disallow: /mentions-legales/
+
+
+# Refus des bot de chat GPT
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+# Sitemap
 Sitemap: https://lucaslacroix.com/sitemap.xml

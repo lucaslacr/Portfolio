@@ -9,6 +9,9 @@ interface Props {
 }
 
 const { title, description } = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+
 ---
 
 <!doctype html>
@@ -16,10 +19,11 @@ const { title, description } = Astro.props;
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="icon" type="image/png" href="assets/favicon.png" />
+		<link rel="icon" type="image/png" href="/assets/favicon.png" />
 		<meta name="theme-color" content="#0B051E" />
 		<title>{title}</title>
 		<meta name="description" content={description} />
+		<link rel="canonical" href={canonicalURL} />
 
 		<meta property="og:title" content={title} />
 		<meta property="og:site_name" content="Lucas Lacroix" />
@@ -29,9 +33,7 @@ const { title, description } = Astro.props;
 		<meta property="og:locale" content="fr_FR" />
 		<meta property="og:url" content="https://lucaslacroix.com/" />
 		<meta property="og:image" content="https://lucaslacroix.com/assets/og-icon.png" />
-		
-		<meta property="og:site_name" content="Agence de référencement Referenseo" />
-		
+				
 	</head>
 	<body>
 		<a id="skip-main" href="#contenu"> Aller au contenu</a>
