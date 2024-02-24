@@ -1,138 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
 <url>
-  <loc>https://lucaslacroix.com/</loc>
-  <lastmod>2022-10-04T16:03:23+00:00</lastmod>
-  <priority>1.00</priority>
+<loc>https://lucaslacroix.com/</loc>
+<lastmod>2024-02-02T08:11:56+00:00</lastmod>
+<priority>1.00</priority>
 </url>
 <url>
-  <loc>https://lucaslacroix.com/projets/</loc>
-  <lastmod>2022-10-04T16:03:24+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://lucaslacroix.com/articles/</loc>
+<lastmod>2024-02-02T08:11:58+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://lucaslacroix.com/articles/</loc>
-  <lastmod>2022-10-04T16:03:38+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://lucaslacroix.com/ressources/</loc>
+<lastmod>2024-02-02T08:12:14+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://lucaslacroix.com/a-propos/</loc>
-  <lastmod>2022-10-04T16:03:38+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://lucaslacroix.com/projets/</loc>
+<lastmod>2024-02-02T08:12:12+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://lucaslacroix.com/projets/happy-dreche/</loc>
-  <lastmod>2022-10-04T16:03:24+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://lucaslacroix.com/a-propos/</loc>
+<lastmod>2024-02-02T08:11:58+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://lucaslacroix.com/projets/le-fossile-magique/</loc>
-  <lastmod>2022-10-04T16:03:24+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://lucaslacroix.com/articles/differences-entre-ux-ui/</loc>
+<lastmod>2024-02-02T08:12:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://lucaslacroix.com/projets/un-musee-a-soi/</loc>
-  <lastmod>2022-10-04T16:03:25+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://lucaslacroix.com/articles/comment-gerer-le-jaime-jaime-pas/</loc>
+<lastmod>2024-02-02T08:12:00+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://lucaslacroix.com/projets/vmrr/</loc>
-  <lastmod>2022-10-04T16:03:26+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://lucaslacroix.com/articles/accessibilite-comment-concevoir-pour-tous/</loc>
+<lastmod>2024-02-02T08:11:59+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://lucaslacroix.com/projets/noiseless/</loc>
-  <lastmod>2022-10-04T16:03:25+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://lucaslacroix.com/projets/happy-dreche/</loc>
+<lastmod>2024-02-02T08:12:13+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://lucaslacroix.com/projets/typographie/</loc>
-  <lastmod>2022-10-04T16:03:25+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://lucaslacroix.com/projets/le-fossile-magique/</loc>
+<lastmod>2024-02-02T08:12:12+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://lucaslacroix.com/projets/le-poireauteur/</loc>
-  <lastmod>2022-10-04T16:03:24+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://lucaslacroix.com/projets/bluecake/</loc>
+<lastmod>2024-02-02T08:12:14+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://lucaslacroix.com/projets/bluecake/</loc>
-  <lastmod>2022-10-04T16:03:24+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://lucaslacroix.com/articles/comment-reussir-ses-presentations/</loc>
+<lastmod>2024-02-02T08:11:58+00:00</lastmod>
+<priority>0.64</priority>
 </url>
 <url>
-  <loc>https://lucaslacroix.com/articles/le-processus-ui/</loc>
-  <lastmod>2022-10-04T16:03:39+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://lucaslacroix.com/articles/systeme-de-design/</loc>
+<lastmod>2024-02-02T08:11:59+00:00</lastmod>
+<priority>0.64</priority>
 </url>
 <url>
-  <loc>https://lucaslacroix.com/articles/le-design-thinking/</loc>
-  <lastmod>2022-10-04T16:03:38+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://lucaslacroix.com/articles/ecoconception-comment-concevoir-le-web-de-demain/</loc>
+<lastmod>2024-02-02T08:12:00+00:00</lastmod>
+<priority>0.64</priority>
 </url>
 <url>
-  <loc>https://lucaslacroix.com/articles/le-design-emotionnel/</loc>
-  <lastmod>2022-10-04T16:03:38+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://lucaslacroix.com/articles/les-metiers-de-la-conception-numerique/</loc>
+<lastmod>2024-02-02T08:12:00+00:00</lastmod>
+<priority>0.64</priority>
 </url>
 <url>
-  <loc>https://lucaslacroix.com/articles/la-recherche-ux/</loc>
-  <lastmod>2022-11-10T16:03:39+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://lucaslacroix.com/articles/audit-ux/</loc>
+<lastmod>2024-02-02T08:12:01+00:00</lastmod>
+<priority>0.64</priority>
 </url>
 <url>
-  <loc>https://lucaslacroix.com/articles/audit-ux/</loc>
-  <lastmod>2023-01-10T16:03:39+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://lucaslacroix.com/articles/la-recherche-ux/</loc>
+<lastmod>2024-02-02T08:12:00+00:00</lastmod>
+<priority>0.64</priority>
 </url>
 <url>
-  <loc>https://lucaslacroix.com/articles/differences-entre-ux-ui/</loc>
-  <lastmod>2023-04-10T16:03:39+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://lucaslacroix.com/articles/le-processus-ui/</loc>
+<lastmod>2024-02-02T08:11:59+00:00</lastmod>
+<priority>0.64</priority>
 </url>
 <url>
-  <loc>https://lucaslacroix.com/articles/accessibilite-comment-concevoir-pour-tous/</loc>
-  <lastmod>2023-05-10T16:03:39+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://lucaslacroix.com/articles/le-design-thinking/</loc>
+<lastmod>2024-02-02T08:11:59+00:00</lastmod>
+<priority>0.64</priority>
 </url>
 <url>
-  <loc>https://lucaslacroix.com/articles/ecoconception-comment-concevoir-le-web-de-demain/</loc>
-  <lastmod>2023-07-10T16:03:39+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://lucaslacroix.com/articles/le-design-emotionnel/</loc>
+<lastmod>2024-02-02T08:12:01+00:00</lastmod>
+<priority>0.64</priority>
 </url>
 <url>
-  <loc>https://lucaslacroix.com/articles/comment-gerer-le-jaime-jaime-pas/</loc>
-  <lastmod>2023-07-10T16:03:39+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://lucaslacroix.com/projets/un-musee-a-soi/</loc>
+<lastmod>2024-02-02T08:12:13+00:00</lastmod>
+<priority>0.64</priority>
 </url>
 <url>
-  <loc>https://lucaslacroix.com/articles/systeme-de-design/</loc>
-  <lastmod>2023-09-10T16:03:39+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://lucaslacroix.com/projets/vmrr/</loc>
+<lastmod>2024-02-02T08:12:13+00:00</lastmod>
+<priority>0.64</priority>
 </url>
 <url>
-  <loc>https://lucaslacroix.com/articles/les-metiers-de-la-conception-numerique/</loc>
-  <lastmod>2023-09-10T16:03:39+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://lucaslacroix.com/projets/noiseless/</loc>
+<lastmod>2024-02-02T08:12:13+00:00</lastmod>
+<priority>0.64</priority>
 </url>
 <url>
-  <loc>https://lucaslacroix.com/articles/comment-reussir-ses-presentations/</loc>
-  <lastmod>2023-11-10T16:03:39+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://lucaslacroix.com/projets/typographie/</loc>
+<lastmod>2024-02-02T08:12:13+00:00</lastmod>
+<priority>0.64</priority>
 </url>
 <url>
-  <loc>https://lucaslacroix.com/articles/ux-writing-ecrire-pour-etre-compris/</loc>
-  <lastmod>2023-12-01T16:03:39+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lucaslacroix.com/services/</loc>
-  <lastmod>2023-12-01T16:03:39+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://lucaslacroix.com/projets/le-poireauteur/</loc>
+<lastmod>2024-02-02T08:12:12+00:00</lastmod>
+<priority>0.64</priority>
 </url>
 </urlset>

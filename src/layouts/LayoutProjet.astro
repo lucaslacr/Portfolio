@@ -23,6 +23,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <meta name="description" content={description} />
   </head>
   <body>
+    <a id="skip-main" href="#contenu"> Aller au contenu</a>
     <Header />
     <main id="contenu">      
         <slot />

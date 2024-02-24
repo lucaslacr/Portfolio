@@ -112,6 +112,7 @@
 	
 	  --ligne-decorative: #d7d4e1;
 	  --ligne-accessible: #9c97aa;
+	  --ligne-focus: var(--primaire-mauve);
 	}
 
 	@media (prefers-color-scheme: dark) {
@@ -135,6 +136,7 @@
 	
 	  --ligne-decorative: #4a4558;
 	  --ligne-accessible: #9c97aa;
+	  --ligne-focus: var(--texte-blanc);
   }
 }
 	
@@ -759,7 +761,7 @@
 	
 	summary:focus-visible, button:focus-visible, input:focus-visible, select, textarea:focus-visible, a:focus-visible {
 	  outline-offset: 2px;
-	  outline: var(--primaire-mauve) 2px solid;
+	  outline: var(--ligne-focus) 2px solid;
 	}
 	
 	.fond-sombre a:focus-visible, .fond-sombre button:focus-visible {
