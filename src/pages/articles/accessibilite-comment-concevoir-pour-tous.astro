@@ -1,5 +1,6 @@
 ---
 import LayoutArticle from "../../layouts/LayoutArticle.astro";
+import Sommaire from '../../components/Sommaire.astro';
 ---
 
 <LayoutArticle
@@ -14,7 +15,44 @@ import LayoutArticle from "../../layouts/LayoutArticle.astro";
 			législation. Un gain pour de nombreuses personnes exclues du
 			numérique et pour l’amélioration des expériences d'usages.
 		</p>
-		<h2>Pourquoi s'intéresser à l'accessibilité</h2>
+
+		<Sommaire liste={[
+			["Pourquoi s'intéresser à l'accessibilité", "#1", "n2"],
+			["Les handicaps et les situations de handicaps", "#2", "n2"],
+			["Concevoir pour tous (design)", "#3", "n2"],
+			["Les contrastes", "#3.1", "n3"],
+			["Les polices", "#3.2", "n3"],
+			["Les composants", "#3.3", "n3"],
+			["Couleur et information", "#3.5", "n3"],
+			["Bruit Visuel", "#3.6", "n3"],
+			["Gestes d'utilisatons", "#3.7", "n3"],
+			["Moyens de contacts", "#3.8", "n3"],
+			["Penser les contenus pour tous", "#4", "n2"],
+			["Les contenus inclusifs", "#4.1", "n3"],
+			["Rédaction", "#4.2", "n3"],
+			["Messages d'erreurs", "#4.3", "n3"],
+			["Mise en forme", "#4.4", "n3"],
+			["Multimédia", "#4.5", "n3"],
+			["Informations téléchargeables", "#4.6", "n3"],
+			["l’accessibilité numérique, une histoire de code", "#5", "n2"],
+			["Les états focus", "#5.1", "n3"],
+			["Zone cliquable", "#5.2", "n3"],
+			["Étiquettes et champs", "#5.3", "n3"],
+			["Limitation de temps", "#5.4", "n3"],
+			["Responsive", "#5.5", "n3"],
+			["Les alternatives textuelles aux images", "#5.6", "n3"],
+			["Les animations", "#5.7", "n3"],
+			["Les balises sémantiques HTML5", "#5.8", "n3"],
+			["Les balises Aria", "#5.9", "n3"],
+			["Vérifier l’accessibilité du dispositif", "#6", "n2"],
+			["Tests automatisés", "#6.1", "n3"],
+			["Tests d'usages", "#6.2", "n3"],
+			["Listes de vérification", "#6.3", "n3"],
+			["Vérifier l’accessibilité du dispositif", "#7", "n2"],
+		]}/>
+
+
+		<h2 id="1">Pourquoi s'intéresser à l'accessibilité</h2>
 		<ul class="interval-reduit">
 			<li>L'accessibilité concerne 12 millions de personnes en France</li>
 			<li>
@@ -31,7 +69,7 @@ import LayoutArticle from "../../layouts/LayoutArticle.astro";
 				l'accès au numérique
 			</li>
 		</ul>
-		<h2>Les handicaps et les situations de handicaps</h2>
+		<h2 id="2">Les handicaps et les situations de handicaps</h2>
 		<p>
 			Pour apprendre à concevoir pour tous, il est nécessaire de
 			comprendre les différents handicaps. Il existe 7 familles de
@@ -146,8 +184,8 @@ import LayoutArticle from "../../layouts/LayoutArticle.astro";
 			la perte de contraste, la non-perception des couleurs, Parkinson, la
 			dyslexie et les troubles de l'attention.
 		</p>
-		<h2>Concevoir pour tous (design)</h2>
-		<h3>Les contrastes</h3>
+		<h2 id="3">Concevoir pour tous (design)</h2>
+		<h3 id="3.1">Les contrastes</h3>
 		<img
 			src="/assets/article-a11y-contrast.webp"
 			loading="lazy"
@@ -169,7 +207,7 @@ import LayoutArticle from "../../layouts/LayoutArticle.astro";
 			> pour Figma vous permettent de les tester avant la production des
 			interfaces.
 		</p>
-		<h3>Les polices</h3>
+		<h3 id="3.2">Les polices</h3>
 		<img
 			src="/assets/article-a11y-police.webp"
 			loading="lazy"
@@ -185,7 +223,7 @@ import LayoutArticle from "../../layouts/LayoutArticle.astro";
 			typographies complexes comme les scripturales et les condensées sont
 			également à éviter pour garantir une bonne lisibilité.
 		</p>
-		<h3>Les composants</h3>
+		<h3 id="3.3">Les composants</h3>
 		<img
 			src="/assets/article-a11y-composant.webp"
 			loading="lazy"
@@ -197,7 +235,7 @@ import LayoutArticle from "../../layouts/LayoutArticle.astro";
 			temporaire, les infos bulles, animation et carrousel automatique
 			doivent être proscrits.
 		</p>
-		<h3>Les intitulés</h3>
+		<h3 id="3.4">Les intitulés</h3>
 		<img
 			src="/assets/article-a11y-intitule.webp"
 			loading="lazy"
@@ -214,7 +252,7 @@ import LayoutArticle from "../../layouts/LayoutArticle.astro";
 			explicites qui clarifient les destinations et les fonctions de ces
 			éléments interactifs.
 		</p>
-		<h3>Couleur et information</h3>
+		<h3 id="3.5">Couleur et information</h3>
 		<img
 			src="/assets/article-a11y-couleur.webp"
 			loading="lazy"
@@ -229,7 +267,7 @@ import LayoutArticle from "../../layouts/LayoutArticle.astro";
 			capacité de les identifier. Pour pallier ces cas, l’information doit
 			être doublée d'un texte ou d'un visuel.
 		</p>
-		<h3>Bruit Visuel</h3>
+		<h3 id="3.6">Bruit Visuel</h3>
 		<img
 			src="/assets/article-a11y-couleurs.webp"
 			loading="lazy"
@@ -241,7 +279,7 @@ import LayoutArticle from "../../layouts/LayoutArticle.astro";
 			visuelle forte. Sélectionner une palette de couleurs plus douce et
 			éviter les animations trop brutes et répétitives.
 		</p>
-		<h3>Gestes d'utilisations</h3>
+		<h3 id="3.7">Gestes d'utilisations</h3>
 		<img
 			src="/assets/article-a11y-mouvement.webp"
 			loading="lazy"
@@ -255,7 +293,7 @@ import LayoutArticle from "../../layouts/LayoutArticle.astro";
 			limitations en proposant des designs utilisables par tous ou en
 			ajoutant des alternatives comme un bouton importer des documents.
 		</p>
-		<h3>Moyens de contacts</h3>
+		<h3 id="3.8">Moyens de contacts</h3>
 		<img
 			src="/assets/article-a11y-contact.webp"
 			loading="lazy"
@@ -270,8 +308,8 @@ import LayoutArticle from "../../layouts/LayoutArticle.astro";
 			variété de méthode de contact est une bonne pratique : numéro de
 			téléphone, email, messagerie instantané, voie postale.
 		</p>
-		<h2>Penser les contenus pour tous</h2>
-		<h3>Les contenus inclusifs</h3>
+		<h2 id="4">Penser les contenus pour tous</h2>
+		<h3 id="4.1">Les contenus inclusifs</h3>
 		<img src="/assets/article-a11y-inclusion.webp" loading="lazy" alt="" />
 		<p>
 			Les informations peuvent être orientées de manière à inclure la
@@ -279,7 +317,7 @@ import LayoutArticle from "../../layouts/LayoutArticle.astro";
 			les activités proposées sont disponibles pour des personnes avec
 			certains handicaps.
 		</p>
-		<h3>Rédaction</h3>
+		<h3 id="4.2">Rédaction</h3>
 		<img
 			src="/assets/article-a11y-redaction.webp"
 			loading="lazy"
@@ -293,7 +331,7 @@ import LayoutArticle from "../../layouts/LayoutArticle.astro";
 			abréviations et les anglicismes pour faciliter la compréhension des
 			propos.
 		</p>
-		<h3>Messages d'erreurs</h3>
+		<h3 id="4.3">Messages d'erreurs</h3>
 		<img
 			src="/assets/article-a11y-message-erreur.webp"
 			loading="lazy"
@@ -305,7 +343,7 @@ import LayoutArticle from "../../layouts/LayoutArticle.astro";
 			ces messages de manière explicite et en donnant des éléments de
 			résolutions sont des bonnes pratique pour limiter les abandons.
 		</p>
-		<h3>Mise en forme</h3>
+		<h3 id="4.4">Mise en forme</h3>
 		<img
 			src="/assets/article-a11y-contenu.webp"
 			loading="lazy"
@@ -316,7 +354,7 @@ import LayoutArticle from "../../layouts/LayoutArticle.astro";
 			mise en forme en fonction du contenu simplifie l'appropriation des
 			propos : photos, diagrammes, tableaux de données, illustrations.
 		</p>
-		<h3>Multimédia</h3>
+		<h3 id="4.5">Multimédia</h3>
 		<img
 			src="/assets/article-a11y-multimedia.webp"
 			loading="lazy"
@@ -332,7 +370,7 @@ import LayoutArticle from "../../layouts/LayoutArticle.astro";
 				rel="nofollow">outil de sous-titrage Nikse</a
 			> permet de les rédiger en ligne ou sur un logiciel.
 		</p>
-		<h3>Informations téléchargeables</h3>
+		<h3 id="4.6">Informations téléchargeables</h3>
 		<img
 			src="/assets/article-a11y-pdf.webp"
 			loading="lazy"
@@ -347,8 +385,8 @@ import LayoutArticle from "../../layouts/LayoutArticle.astro";
 			directement dans une page Web.
 		</p>
 
-		<h2>l’accessibilité numérique, une histoire de code</h2>
-		<h3>Les états focus</h3>
+		<h2 id="5">l’accessibilité numérique, une histoire de code</h2>
+		<h3 id="5.1">Les états focus</h3>
 		<img
 			src="/assets/article-a11y-focus.webp"
 			loading="lazy"
@@ -376,7 +414,7 @@ import LayoutArticle from "../../layouts/LayoutArticle.astro";
 		fQ==</code></pre>
 		</details>
 
-		<h3>Zone cliquable</h3>
+		<h3 id="5.2">Zone cliquable</h3>
 		<img
 			src="/assets/article-a11y-zone.webp"
 			loading="lazy"
@@ -388,7 +426,7 @@ import LayoutArticle from "../../layouts/LayoutArticle.astro";
 			handicaps moteurs.
 		</p>
 
-		<h3>Étiquettes et champs</h3>
+		<h3 id="5.3">Étiquettes et champs</h3>
 		<img
 			src="/assets/article-a11y-champ.webp"
 			loading="lazy"
@@ -414,7 +452,7 @@ import LayoutArticle from "../../layouts/LayoutArticle.astro";
 			permet aux utilisateurs de connaître ce qu'ils ont écrit, le
 			mémoriser et de se rassurer sur leur saisie.
 		</p>
-		<h3>Limitation de temps</h3>
+		<h3 id="5.4">Limitation de temps</h3>
 		<img
 			src="/assets/article-a11y-temps.webp"
 			loading="lazy"
@@ -431,7 +469,7 @@ import LayoutArticle from "../../layouts/LayoutArticle.astro";
 			tâche qu'une personne valide.
 		</p>
 
-		<h3>Responsive</h3>
+		<h3 id="5.5">Responsive</h3>
 		<img
 			src="/assets/article-a11y-responsive.webp"
 			loading="lazy"
@@ -445,7 +483,7 @@ import LayoutArticle from "../../layouts/LayoutArticle.astro";
 			utilisent un zoom avancé - jusqu'à 300% - pour pouvoir lire ce qui
 			s'affiche à l'écran.
 		</p>
-		<h3>Les alternatives textuelles aux images</h3>
+		<h3 id="5.6">Les alternatives textuelles aux images</h3>
 		<p>
 			Les textes alternatifs aux images sont essentiels pour les personnes
 			non voyantes. Elles leur permettent de comprendre les éléments
@@ -466,7 +504,7 @@ import LayoutArticle from "../../layouts/LayoutArticle.astro";
 			loading="lazy"
 			alt="Arbre de décisions sur l'ajout ou non d'une balise Alt"
 		/>
-		<h3>Les animations</h3>
+		<h3 id="5.7">Les animations</h3>
 		<p>
 			Les usagers peuvent être déranger par la présence d'animations. Les
 			navigateur on accès au choix des utilisateur quant à l'utilisation
@@ -483,7 +521,7 @@ import LayoutArticle from "../../layouts/LayoutArticle.astro";
 			fQ==
 	</code></pre>
 		</details>
-		<h3>Les balises sémantiques HTML5</h3>
+		<h3 id="5.8">Les balises sémantiques HTML5</h3>
 		<img
 			src="/assets/article-a11y-html.webp"
 			loading="lazy"
@@ -547,7 +585,7 @@ import LayoutArticle from "../../layouts/LayoutArticle.astro";
 				</li>
 			</ul>
 		</p>
-		<h3>Les balises Aria</h3>
+		<h3 id="5.9">Les balises Aria</h3>
 		<p>
 			Les balises HTML ne suffisent pas toujours à la mise en
 			accessibilité des pages. Parfois, il faut expliciter, avec des
@@ -630,8 +668,8 @@ import LayoutArticle from "../../layouts/LayoutArticle.astro";
 				"pièges aux claviers".
 			</li>
 		</ul>
-		<h2>Vérifier l’accessibilité du dispositif</h2>
-		<h3>Tests automatisés</h3>
+		<h2 id="6">Vérifier l’accessibilité du dispositif</h2>
+		<h3 id="6.1">Tests automatisés</h3>
 		<p>
 			Avant la mise en ligne de la solution, il est recommandé de tester
 			les pages et fonctionnalités produites. Les outils comme le très
@@ -655,7 +693,7 @@ import LayoutArticle from "../../layouts/LayoutArticle.astro";
 			d'une zone cliquable suffisante, etc. C'est Pourquoi il est
 			recommandé d’utiliser en plus l’inspecteur HTML des navigateurs.
 		</p>
-		<h3>Tests d'usages</h3>
+		<h3 id="6.3">Tests d'usages</h3>
 		<p>
 			Avec Voice Over pour Mac Os ou <a
 				href="https://www.nvaccess.org/"
@@ -667,7 +705,7 @@ import LayoutArticle from "../../layouts/LayoutArticle.astro";
 			à la navigation clavier que l'on n'aurait pas relevé avec les outils
 			automatisés.
 		</p>
-		<h3>Listes de vérification</h3>
+		<h3 id="6.4">Listes de vérification</h3>
 		<p>
 			Pour vérifier la conformité des différentes interfaces, il existe
 			des listes de case à cocher basé sur les référentiels pour vérifier
@@ -689,7 +727,7 @@ import LayoutArticle from "../../layouts/LayoutArticle.astro";
 				rel="nofollow">checklist réalisée par la WebAIM</a
 			>.
 		</p>
-		<h2>Se mettre en conformité</h2>
+		<h2 id="7">Se mettre en conformité</h2>
 		<ul>
 			<li>
 				Respecter <b>les critères d'accessibilités</b> du <abbr

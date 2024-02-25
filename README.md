@@ -4,12 +4,6 @@
 Le portfolio 2024 est réaliser sur une nouvelle technologie : Nuxt -> Astro.
 Ce changement apporte des amélioration notable sur le référencement, la web performance et la maintenabilité.
 
-### restant
-- récupérer tous les contenus de nuxt
-- récupérer toutes les fonctionnalités
-- mode nuit natif
-- optimisation du code
-
 ## 🧞 Commandes
 
 Depuis un terminal:

@@ -1,0 +1,92 @@
+---
+import IconSommaire from "../assets/sommaire.svg";
+interface Props {
+    liste: Array<Array<string>>;
+}
+
+const { liste } = Astro.props;
+---
+
+<button id="sommaire" aria-controls="sommaireliste" aria-expanded="false">
+    <img src={IconSommaire.src} alt="" loading="lazy" /> Sommaire
+</button>
+
+<ul id="contenusommaire">
+    {
+        liste.map((item) => (
+            <li class={item[2]}>
+                <a href={item[1]}>{item[0]}</a>
+            </li>
+        ))
+    }
+</ul>
+<script>
+    const sommaireBtn = document.getElementById("sommaire");
+
+    sommaireBtn.addEventListener("click", accordeon);
+
+    function accordeon() {
+        let element = document.getElementById("sommaire");
+        let celement = document.getElementById("contenu" + "sommaire");
+
+        if (celement.classList.contains("is-open")) {
+            celement.classList.remove("is-open");
+            element.setAttribute("aria-expanded", "false");
+        } else {
+            celement.classList.add("is-open");
+            element.setAttribute("aria-expanded", "true");
+        }
+    }
+</script>
+
+<style>
+    #sommaire {
+        gap: 8px;
+        align-items: center;
+        background-color: var(--surface-blanc);
+        border: 1px solid var(--ligne-decorative);
+        border-radius: 40px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        color: var(--texte-titre);
+        padding: 12px 24px 12px 18px;
+        transition: background-color 0.3s;
+        width: initial;
+    }
+
+    #sommaire img {
+        width: 24px;
+        margin: 0px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root {
+            #sommaire img {
+                filter: invert(100%);
+            }
+        }
+    }
+
+    #contenusommaire li {
+        list-style: none;
+        padding-left: 0;
+        margin-bottom: 0;
+        padding: 4px;
+    }
+    #contenusommaire a {
+        border: 0;
+        padding: 2px;
+    }
+    #contenusommaire .n3 {
+        border-left: solid var(--ligne-decorative) 1px;
+        padding-left: 6px;
+        margin-left: 8px;
+    }
+    #contenusommaire {
+        display: none;
+    }
+    #contenusommaire.is-open {
+        display: block;
+    }
+</style>
