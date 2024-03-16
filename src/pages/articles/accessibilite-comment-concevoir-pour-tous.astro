@@ -1,6 +1,8 @@
 ---
 import LayoutArticle from "../../layouts/LayoutArticle.astro";
 import Sommaire from '../../components/Sommaire.astro';
+let ouvert  = "{";
+let fermer  = "}";
 ---
 
 <LayoutArticle
@@ -10,10 +12,10 @@ import Sommaire from '../../components/Sommaire.astro';
 >
 	<div>
 		<p>
-			Oubliée ou omise de nombreuses réalisations, l’accessibilité
+			Oubliée de nombreuses réalisations, l’accessibilité
 			numérique, abrégée A11y, est en passe de devenir la norme grâce à la
-			législation. Un gain pour de nombreuses personnes exclues du
-			numérique et pour l’amélioration des expériences d'usages.
+			législation. Une révolution avenir pour de nombreuses personnes exclues du
+			numérique et pour l’amélioration des siteweb.
 		</p>
 
 		<Sommaire liste={[
@@ -401,17 +403,18 @@ import Sommaire from '../../components/Sommaire.astro';
 		<details>
 			<summary>Voir le code CSS pour afficher l'état focus</summary>
 
-			<pre><code>a:focus-visible,
+			<pre><code>
+	a:focus-visible,
 	button:focus-visible,
 	select:focus-visible,
 	textarea:focus-visible,
 	summary:focus-visible,
-	input:focus-visible ew==
+	input:focus-visible {ouvert}
 		outline-offset: 2px;
 		outline: #224477 2px solid;
 		border-radius: 4px;
 		transition: none;
-		fQ==</code></pre>
+		{fermer}</code></pre>
 		</details>
 
 		<h3 id="5.2">Zone cliquable</h3>
@@ -514,11 +517,11 @@ import Sommaire from '../../components/Sommaire.astro';
 		</p>
 		<details>
 			<summary>Voir le code CSS pour la règle d'animation</summary>
-			<pre><code>  @media (prefers-reduced-motion: reduce) ew==
-		.promotion ew==
+			<pre><code>  @media (prefers-reduced-motion: reduce) {ouvert}
+		.monAnimation .uneAutreAnimation {ouvert}
 			animation: none;
-			fQ==
-			fQ==
+			{fermer}
+		{fermer}
 	</code></pre>
 		</details>
 		<h3 id="5.8">Les balises sémantiques HTML5</h3>

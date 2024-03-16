@@ -1,0 +1,132 @@
+---
+import LayoutArticle from "../../layouts/LayoutArticle.astro";
+import Sommaire from '../../components/Sommaire.astro';
+let ouvert  = "{";
+let fermer  = "}";
+---
+
+<LayoutArticle
+	title="Formulaire, les bonnes pratiques"
+	metadata="8 mars 2024 · 7 min"
+	description="Comment optimiser et concevoir au mieux les forumlaires en ligne. Ergonomie, gestions des erreurs et développement"
+>
+	<div>
+		<p>
+			Personne n’aime remplir des formulaires. <br> On ne peut pourtant pas s'en passer, alors comment faciliter et améloirer ces passage oubligé de nombreux parcours web ?
+		</p>
+
+		<Sommaire liste={[
+			["Pourquoi s'intéresser à l'accessibilité", "#1", "n2"],
+			["Les handicaps et les situations de handicaps", "#2", "n2"],
+			["Concevoir pour tous (design)", "#3", "n2"],
+			["Les contrastes", "#3.1", "n3"],
+			["Les polices", "#3.2", "n3"],
+			["Les composants", "#3.3", "n3"],
+			["Couleur et information", "#3.5", "n3"],
+			["Bruit Visuel", "#3.6", "n3"],
+			["Gestes d'utilisatons", "#3.7", "n3"],
+			["Moyens de contacts", "#3.8", "n3"],
+			["Penser les contenus pour tous", "#4", "n2"],
+			["Les contenus inclusifs", "#4.1", "n3"],
+			["Rédaction", "#4.2", "n3"],
+			["Messages d'erreurs", "#4.3", "n3"],
+			["Mise en forme", "#4.4", "n3"],
+			["Multimédia", "#4.5", "n3"],
+			["Informations téléchargeables", "#4.6", "n3"],
+			["l’accessibilité numérique, une histoire de code", "#5", "n2"],
+			["Les états focus", "#5.1", "n3"],
+			["Zone cliquable", "#5.2", "n3"],
+			["Étiquettes et champs", "#5.3", "n3"],
+			["Limitation de temps", "#5.4", "n3"],
+			["Responsive", "#5.5", "n3"],
+			["Les alternatives textuelles aux images", "#5.6", "n3"],
+			["Les animations", "#5.7", "n3"],
+			["Les balises sémantiques HTML5", "#5.8", "n3"],
+			["Les balises Aria", "#5.9", "n3"],
+			["Vérifier l’accessibilité du dispositif", "#6", "n2"],
+			["Tests automatisés", "#6.1", "n3"],
+			["Tests d'usages", "#6.2", "n3"],
+			["Listes de vérification", "#6.3", "n3"],
+			["Vérifier l’accessibilité du dispositif", "#7", "n2"],
+		]}/>
+
+
+		<h2 id="1">Les bonnes pratiques générales</h2>
+		<h3>Faire court</h3>
+		<img
+			src="/assets/article-formulaire-court.webp"
+			loading="lazy"
+			alt="2 forumualaire, un longs un court"
+		/>
+		
+		<p>Réduisiez le nombre de champs nécessaire. Vous pouvez identifier les champs qui sont pas utile ou définir des champs à completer plus tard dans le parcours.</p>
+		<h3>Regrouper visuellement les éléments qui vont ensemble</h3>
+		<h3>Une seule colonne</h3>
+		<h3>Ajuster la taille par rapport au contenu attendu « code postale V adresse »</h3>
+		<h3>Auto compétition</h3>
+		<h3>Ne pas recourir aux doubles saisies</h3>
+		<h3>0 limites de temps</h3>
+		<h3>Donner un titre explicite aux champs</h3>
+		<h3>Mettre optionnel en toute lettre seulement</h3>
+		<h3>Limiter les placeholders</h3>
+		<h3>Ça doit ressembler à un champ</h3>
+		<h3>Bonne sémantique de couleur</h3>
+		<p>(bouton effacer moins important que celui valider)</p>
+		<h3>Pour les longs formulaires, séparer en partie</h3>
+		<p>Les formulaire considérés comme long - plus de 8 champs - doivent être séparer en parties, ces dernière doivent être sauvegarder pour ne pas perdre les saissies déjà valider.</p>
+		<h3>Radio ou select</h3>
+
+		<h2>Les champs spécifiques</h2>
+		<h3>Case à cocher</h3>
+		<h4>Pas d’option précoché (taille 44)</h4>
+		<h4>Pas de logique inversé (cocher pour ne pas s’abonner</h4>
+		<h3>Les listes déroulantes longues</h3>
+		<p>Comme pour les pays où les marques de voitures faire une section « populaire », peu de personnes de votre audience ne viennent d’Afganistan ou posèdende une Acura</p>
+		<h3>Utiliser les bons type pour faciliter le remplissage</h3>
+		<h3>Pouvoir compresser les fichiers envoyés (pas limités en de taille) Spécifie le format</h3>
+		<h3>Champs mots de passe</h3>
+		<h4>Donner les indications en amont des champs « 12 caractères pour le mot de passe</h4>
+		Règles sur les mots de passe : 12 caractères et c’est tout
+		<h4>Pouvoir afficher ses mots de passe</h4>
+		<h4>Masquer le code promo (frustrant si on en as pas)</h4>
+
+		<h2>Aide à la saissie</h2>
+		<h3>Dans le cas ou un report d’information est nécessaire, expliciter ou et comment trouver</h3>
+		<h3>Fournir un support</h3>
+		<h3>Pour les informations sensibles, expliquer pourquoi vous en avez besoin</h3>
+		<h3>Permettre l’auto-complétion</h3>
+		<h4>Utiliser les attributs autocomplete=""</h4>
+		<h4>les bons noms et id pour favoriser l'autocompletion</h4>
+		
+		<h3>Afficher un message visible et explicite de succès et les étapes qui vont suivre	</h3>
+		<h3>Afficher les délais de traitement</h3>
+
+		<h2>Maintenir l'engagment</h2>
+		<h3>Jauge de progression</h3>
+		<p>Les jauges de pression sont une des application de l'effet Zeigarnik. Il s'appuie sur notre bias humain à vouloir terminer des actions en cours.</p>
+		<h3>Motiver en donnant les avantages à terminer le formulaire</h3>
+		
+
+		<h2>Bonnes pratiques en accessibilité numérique</h2>
+		<h3>Utiliser un bouton pour annuler les boutons radio</h3>
+		<h3>Navigateur clavier (ordre et état focus)</h3>
+		<h3>Utiliser des éléments natifs</h3>
+		<h3>Taille du champ pour le mobile et A11y</h3>
+		<h3>Recapcha, Hcapcha c’est non</h3>
+
+		<h2>Gestions des erreurs</h2>
+		<h3>Pas de champs désactivés, ça empêche les feed-back		</h3>
+		<h3>Des messages d’erreur qui permettent de trouver les problèmes</h3>
+
+		<h2>Évaluer les forumulaires</h2>
+		<h3>Les faire tester auprès de l'audience cible</h3>
+		<h3>Chronomètre le temps de remplissage</h3>
+		
+		<h2>traitement et retour utilisateur</h2>
+		<h3>Proposer pour une soumission de dossier une page de relecture pour confirmer les données saissies</h3>
+		<h3>Envoyer une copie par email</h3>
+		<h3>Sécuriser les saisies</h3>
+		<p>(https, serveur classe 3, Argon2, méthode de sécurité)</p>
+
+	</div>
+</LayoutArticle>

@@ -8,7 +8,7 @@ const { liste } = Astro.props;
 ---
 
 <button id="sommaire" aria-controls="sommaireliste" aria-expanded="false">
-    <img src={IconSommaire.src} alt="" loading="lazy" /> Sommaire
+    <img src={IconSommaire.src} alt="" loading="lazy" aria-hidden="true"/> Sommaire
 </button>
 
 <ul id="contenusommaire">
@@ -81,7 +81,7 @@ const { liste } = Astro.props;
     #contenusommaire .n3 {
         border-left: solid var(--ligne-decorative) 1px;
         padding-left: 6px;
-        margin-left: 8px;
+        margin-left: 16px;
     }
     #contenusommaire {
         display: none;
