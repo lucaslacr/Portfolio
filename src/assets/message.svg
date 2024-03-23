@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
-    <g transform="matrix(1,0,0,1,-772.16,-137.434)">
-        <g transform="matrix(0.51276,0,0,0.51276,683.002,78.7163)">
-            <rect id="message" x="173.879" y="114.512" width="46.806" height="46.806" style="fill:none;"/>
-            <g id="message1" serif:id="message">
-                <g transform="matrix(2.06735,0,0,1.4828,-1477.07,-83.7861)">
-                    <path d="M817.435,148.468C817.435,144.819 815.31,141.857 812.692,141.857L807.109,141.857C804.492,141.857 802.367,144.819 802.367,148.468C802.367,152.118 804.492,155.08 807.109,155.08L808.054,155.08L812.732,159.114L812.692,155.08C815.31,155.08 817.435,152.118 817.435,148.468Z" style="fill:none;stroke:#0B051E;stroke-width:1.5px;"/>
-                </g>
+<svg width="100%" height="100%" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-11302.3,-1827.66)">
+        <g id="message" transform="matrix(0.51276,0,0,0.51276,11213.1,1768.94)">
+            <rect x="173.879" y="114.512" width="46.806" height="46.806" style="fill:none;"/>
+            <g transform="matrix(2.06735,0,0,1.4828,-1477.07,-83.7861)">
+                <path d="M818.142,148.468C818.142,152.323 816.079,155.512 813.409,156.001L813.439,159.1C813.443,159.46 813.305,159.794 813.081,159.972C812.856,160.149 812.58,160.142 812.36,159.952L807.853,156.067L807.109,156.067C804.101,156.067 801.659,152.662 801.659,148.468C801.659,144.275 804.101,140.87 807.109,140.87L812.692,140.87C815.7,140.87 818.142,144.275 818.142,148.468ZM816.727,148.468C816.727,145.364 814.919,142.843 812.692,142.843L807.109,142.843C804.882,142.843 803.074,145.364 803.074,148.468C803.074,151.573 804.882,154.094 807.109,154.094L808.054,154.094C808.186,154.094 808.314,154.145 808.426,154.241C808.426,154.241 812.007,157.329 812.007,157.329L811.985,155.094C811.982,154.83 812.056,154.575 812.189,154.388C812.322,154.2 812.503,154.094 812.692,154.094C814.919,154.094 816.727,151.573 816.727,148.468Z"/>
             </g>
         </g>
     </g>

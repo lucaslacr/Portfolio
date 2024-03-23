@@ -1,38 +1,37 @@
 ---
-import IconSommaire from "../assets/sommaire.svg";
+import IconEcouter from "../assets/ecouter.svg";
 interface Props {
     liste: Array<Array<string>>;
 }
 
-const { liste } = Astro.props;
+const { sourceaudio } = Astro.props;
 ---
 
-<button id="sommaire" aria-controls="sommaireliste" aria-expanded="false">
-    <img src={IconSommaire.src} alt="" aria-hidden="true"/> Sommaire
+<button id="ecouter" aria-controls="ecouterliste" aria-expanded="false">
+    <img src={IconEcouter.src} alt="" loading="lazy" aria-hidden="true"/> Écouter l'article
 </button>
 
-<ul id="contenusommaire">
-    {
-        liste.map((item) => (
-            <li class={item[2]}>
-                <a href={item[1]}>{item[0]}</a>
-            </li>
-        ))
-    }
+<ul id="contenuecouter">
+
+    <audio id="audioplayer" controls preload="none" src={sourceaudio}></audio>
+
 </ul>
 <script>
-    const sommaireBtn = document.getElementById("sommaire");
+    const ecouterBtn = document.getElementById("ecouter");
 
-    sommaireBtn.addEventListener("click", accordeon);
+    ecouterBtn.addEventListener("click", accordeon);
 
     function accordeon() {
-        let element = document.getElementById("sommaire");
-        let celement = document.getElementById("contenu" + "sommaire");
+        let element = document.getElementById("ecouter");
+        let celement = document.getElementById("contenu" + "ecouter");
+        document.getElementById("audioplayer").play();
 
         if (celement.classList.contains("is-open")) {
+            document.getElementById("audioplayer").pause();
             celement.classList.remove("is-open");
             element.setAttribute("aria-expanded", "false");
         } else {
+            document.getElementById("audioplayer").play();
             celement.classList.add("is-open");
             element.setAttribute("aria-expanded", "true");
         }
@@ -40,7 +39,7 @@ const { liste } = Astro.props;
 </script>
 
 <style>
-    #sommaire {
+    #ecouter {
         gap: 8px;
         align-items: center;
         background-color: var(--surface-blanc);
@@ -55,38 +54,48 @@ const { liste } = Astro.props;
         width: initial;
     }
 
-    #sommaire img {
+    audio {
+        width: 100%;
+        max-width: 720px;
+        position: fixed;
+        bottom: 16px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+
+    #ecouter img {
         width: 24px;
         margin: 0px;
     }
 
     @media (prefers-color-scheme: dark) {
         :root {
-            #sommaire img {
+            #ecouter img {
                 filter: invert(100%);
             }
         }
     }
 
-    #contenusommaire li {
+    #contenuecouter li {
         list-style: none;
         padding-left: 0;
         margin-bottom: 0;
         padding: 4px;
     }
-    #contenusommaire a {
+    #contenuecouter a {
         border: 0;
         padding: 2px;
     }
-    #contenusommaire .n3 {
+    #contenuecouter .n3 {
         border-left: solid var(--ligne-decorative) 1px;
         padding-left: 6px;
         margin-left: 16px;
     }
-    #contenusommaire {
+    #contenuecouter {
         display: none;
     }
-    #contenusommaire.is-open {
+    #contenuecouter.is-open {
         display: block;
     }
 </style>

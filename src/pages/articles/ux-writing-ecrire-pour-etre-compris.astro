@@ -1,42 +1,71 @@
 ---
 import LayoutArticle from "../../layouts/LayoutArticle.astro";
+import Sommaire from "../../components/Sommaire.astro";
 ---
 
 <LayoutArticle
 	title="UX Writing, écrire pour être compris"
-	metadata="8 février 2024 · 7 min"
-	description="Quand on pense design, on pense interfaces, composants, couleurs et formes mais jamais contenu ! Et pourtant le contenu est essentiel dans nos interfaces et dans une expérience utilisateur réussite !"
+	metadata="8 février 2024 · 8 min"
+	description="Quand on pense design, on pense interfaces, composants, couleurs et formes mais jamais contenu ! Et pourtant le contenu est essentiel dans nos interfaces !"
 >
 	<p>
 		Quand on pense design, on pense interfaces, composants, couleurs et
-		formes mais jamais contenu ! Et pourtant le contenu est essentiel dans
+		formes, mais jamais contenu ! Et pourtant le contenu est essentiel dans
 		nos interfaces et dans une expérience utilisateur réussite ! Mais alors,
-		comment écrire les intitulés et les textes d'une page ?
+		comment bien écrire les intitulés et les textes d'une page ?
 	</p>
-
+	<Sommaire
+		liste={[
+			["Qu'est-ce que le Langage ?", "#1", "n2"],
+			[
+				"Comment s'ancre la langue dans notre processus de communication ?",
+				"#2",
+				"n2",
+			],
+			["Identifier les sources d'incompréhension", "#2.1", "n3"],
+			["C'est quoi L'UX writing ?", "#3", "n2"],
+			["Quand recourir à UX Writing", "#4", "n2"],
+			["Positionnement, le ton et la voix", "#5", "n2"],
+			["Bonnes pratiques", "#6", "n2"],
+			["L’écriture conversationnelle", "#6.1", "n3"],
+			["Concision", "#6.2", "n3"],
+			["Abréviations et termes complexes", "#6.3", "n3"],
+			["Cohérence", "#6.4", "n3"],
+			["Respecter les standards", "#6.5", "n3"],
+			["Formulation maladroite", "#6.6", "n3"],
+			["Neutralité dans les zones sensibles", "#6.7", "n3"],
+			["Une mise en forme adaptée", "#6.8", "n3"],
+			["Les messages d'erreurs", "#7", "n2"],
+			["Facile à lire et à comprendre", "#8", "n2"],
+			["Comment évaluer les écrits", "#9", "n2"],
+		]}
+	/>
+	<br />
 	<p>
 		Avant d'aborder les bonnes pratiques et les méthodes de l'UX Writer,
 		nous avons besoins de comprendre le fondamental, la langue.
 	</p>
 
-	<h2>Qu'est-ce que le Langage ?</h2>
+	<h2 id="1">Qu'est-ce que le Langage ?</h2>
 	<p>
 		Une langue est un système de signes (sons, symboles, gestes) structurés
 		et partagé par un groupe de personnes pour communiquer. Les langues sont
-		infinies et en évolution permanente, des mots, des expressions
-		naissent, le sens de certain évolue et d'autres disparaissent. Au sien
-		d'une même communauté de langue, il existe d'autres groupes qui
-		partagent des prononciations et des groupes mots.
+		des constructions infinies et en évolution permanente, des mots, des
+		expressions naissent, le sens de certaines évoluent et d'autres
+		disparaissent. Au sein d'une même communauté de langue, il existe
+		d'autres groupes qui partagent des prononciations et des groupes de mots
+		qui leur sont propres.
 	</p>
-	<h2>Comment s'ancre la langue dans notre processus de communication ?</h2>
+	<h2 id="2">
+		Comment s'ancre la langue dans notre processus de communication ?
+	</h2>
 	<p>
 		Ce processus s'articule avec 3 composantes :
 		<ul class="interval-reduit">
 			<li><b>Le référent</b> : L'objet ou la chose en elle-même</li>
 			<li>
 				<b>La représentation</b> (ou Le signifiant) : sa prononciation, le
-				mot, le geste, sa représentation visuelle (dessin et
-				illustration)
+				mot, le geste, sa représentation visuelle (dessin et illustration)
 			</li>
 			<li>
 				<b>Le concept mental</b> (ou signifié) : Ce qu'évoque le sujet pour
@@ -52,33 +81,34 @@ import LayoutArticle from "../../layouts/LayoutArticle.astro";
 		Mon référent ne varie pas. <br /> La représentation dépend de ma langue et
 		le concept mental est propre au niveau et à l'angle de connaissance du locuteur.
 	</p>
-	<h3>Identifier les sources d'incompréhension</h3>
+	<h3 id="2.1">Identifier les sources d'incompréhension</h3>
 	<p>
 		En reprenant le schéma du triangle sémiotique, on peut identifier 3 cas
 		:
 		<ul>
 			<li>
-				<b>La non-connaissance du référent</b> : Je ne sais pas ce qu'est un
-				Litchi. Je n'en ai jamais entendu parler et si on me le présentait
+				<b>La non-connaissance du référent</b> : Je ne sais pas ce qu'est
+				un Litchi. Je n'en ai jamais entendu parler et si on me le présentait
 				cela serait pour moi une découverte.
 			</li>
 			<li>
-				<b>L'absence de connaissance de la représentation</b> :
-				Je ne sais pas ce qu'est un GSM, pourtant je sais ce qu'est un
-				téléphone portable. Les termes que j'associe au référence
-				peuvent être : mobile, téléphone, portable, iphone
+				<b>L'absence de connaissance de la représentation</b> : Je ne sais
+				pas ce qu'est un GSM, pourtant je sais ce qu'est un téléphone portable.
+				Les termes que j'associe au référent peuvent être : mobile, téléphone,
+				portable, Iphone
 			</li>
 			<li>
 				<b>Ne pas connaître le concept mental</b> : Je sais ce qu'est une
-				pomme toute fois, j'ignore le sens bibilique de cette dernière.
+				pomme toute fois, j'ignore le sens biblique de cette dernière.
 			</li>
 		</ul>
 		<p>
-			Pour bien communiquer il est essentiel de connaitre son
+			Pour bien communiquer, il est essentiel de connaitre son
 			interlocuteur. Utiliser ses représentations et expliciter les
-			concepte mental et les référents don nos lecteurs n'ont pas la connaissance.
+			concepts mentaux et les référents dont nos lecteurs n'ont pas la
+			connaissance.
 		</p>
-		<h2>C'est quoi L'UX writing ?</h2>
+		<h2 id="3">C'est quoi L'UX writing ?</h2>
 		<p>
 			C'est la discipline, la profession qui consiste à <b
 				>évaluer, rechercher, écrire et tester</b
@@ -86,21 +116,20 @@ import LayoutArticle from "../../layouts/LayoutArticle.astro";
 			cohérent et rassurer.
 		</p>
 		<p>
-			Pour maintenir cette coéhrence d'écritre les équipes de design
-			documentent leurs manières d'écrire dans les systèmes de Design. Le
-			site
+			Pour maintenir cette cohérence, les équipes de design documentent
+			leurs manières de rédiger dans les systèmes de Design. Le site
 			<a
-				href="https://www.uxwritinglibrary.com/inspiration"
-				target="_blank">UX Writing Library</a
+				href="https://designsystems.surf/directories/voice-and-tone"
+				target="_blank">Design systems surf</a
 			> répertorie celles en accès libre.
 		</p>
 
-		<h2>Quand recourir à UX Writing</h2>
+		<h2 id="4">Quand recourir à UX Writing</h2>
 		<p>
 			C'est la problématique du métier, on y a recours souvent trop tard,
 			lorsque les maquettes sont prêtes à partir en développement.
 			L'articulation entre le design d'interface et le design textuel doit
-			s'établir en même temps. "remplir les blancs" ne peut être un axe
+			s'établir en même temps. "Remplir les blancs" ne peut être un axe
 			pertinent de travail.
 		</p>
 		<img
@@ -111,22 +140,23 @@ import LayoutArticle from "../../layouts/LayoutArticle.astro";
 
 		<p>
 			Le processus de création d'interface et d'écriture de texte débute à
-			l'issue de l'élaboration de l'user flow (l'enchaienement des
+			l'issue de l'élaboration de l'user flow (l'enchaînement des
 			différents écrans d'une application) ou du schéma "Core design model
-			page". Les 2 designers peuvent s'accorder sur les informations et
-			leurs formes qu'ils vont prendre sur les pages. La bonne information
-			avec au bon format et au bon moment.
+			page". Les 2 designers peuvent s'accorder sur les informations et la
+			forme qu'ils vont prendre sur les pages. La bonne information avec
+			le bon format et au bon moment.
 		</p>
 
-		<h2>Positionnement, le ton et la voix</h2>
+		<h2 id="5">Positionnement, le ton et la voix</h2>
 		<p>
 			Comment être cohérent sur l'ensemble d'un écosystème, sur les
 			courriels, le site web et les différents supports de communication ?<br
-			/> Pour être constant, il faut d'abord dresser un système d'écriture :
-			Es-ce que nos écrit sont plutôt amicaux ou corporate ? Et a quel niveau...
+			/> Pour être constant, il faut d'abord dresser un système d'écriture
+			: Est-ce que nos écrits sont plutôt amicaux ou corporate ? Et à quel
+			niveau...
 			<br />
-			Pour se positionner sur ce cette identité, Kinneret Yifrah à établie
-			6 matrices à un axe :
+			Pour se positionner sur cette identité, il existe des matrices à un axe
+			:
 		</p>
 		<img
 			src="/assets/article-writing-matrice.webp"
@@ -135,22 +165,36 @@ import LayoutArticle from "../../layouts/LayoutArticle.astro";
 		/>
 
 		<p>
-			Le positionement et le ton et la voix se consititue également par
+			Le positionnement du ton et de la voix se constitue également par
 			des règles d'écritures
 			<ul class="interval-reduit">
-				<li>L'usage du tutoiement ou du vouvoiement</li>
 				<li>
-					L'appélation des produits ou des interlocuteurs :
-					client/utilisateur /usager/ voyageur/influenceurs,
-					salarié/collaborateur,
+					<b>La proximité</b> Est-ce que l'on tutoie ou l'on vouvoie. Au-delà
+					de cette question singulière à la langue française, c'est aussi
+					le sujet de la distance qu'adopte une entité vis-à-vis de ces
+					interlocuteurs.
 				</li>
-				<li>La nomination des produits et services</li>
-				<li>Les valeurs de l'entité </li>
+				<li>
+					<b>La nomination</b> des éléments et groupes de personnes : <br
+					/>Est-ce que l'on va évoquer nos utilisateurs avec des
+					termes comme des usagers, des voyageurs ou des clients.<br
+					/> Ou encore sur l'appellation de produits : Article, out fit,
+					vêtement, ensemble, ou tenue. Ce choix d'appellation délibéré
+					permet de donner une sémantique et maintenir une cohérence sur
+					un site ou même sur l'ensemble des éléments de communication
+					d'une organisation.
+				</li>
+				<li>
+					<b>Les valeurs</b> de l'entité. Chaque publication est porteuse
+					de valeurs. Les mots et les angles que nous allons choisir vont
+					transmettre ces valeurs. Les organisations en choisissent autour
+					de 5. Pour Deezer : audacieux, frais et décalé
+				</li>
 			</ul>
 		</p>
 
-		<h2>Bonnes pratiques</h2>
-		<h3>L’écriture conversationnelle</h3>
+		<h2 id="6">Bonnes pratiques</h2>
+		<h3 id="6.1">L’écriture conversationnelle</h3>
 		<p>
 			C'est le concept clé de l'UX Writing. Cette approche vise à se
 			rapprocher au maximum de la manière dont nous parlons. L'objectif,
@@ -159,44 +203,54 @@ import LayoutArticle from "../../layouts/LayoutArticle.astro";
 		</p>
 		<h4>Comment la mettre en pratique ?</h4>
 		<p>
-			Dictez vos textes et écoutez les. Nos ordinateur sont équipé
-			nativement de ces technologie de saissie vocal et de lecteur de
-			texte. C'est un bon moyen de se rendre compte de la fuidité de ces
+			Dictez vos textes et écoutez-les. Nos ordinateurs sont équipés
+			nativement de ces technologies de saisie vocale et de lecteur de
+			texte. C'est un bon moyen de se rendre compte de la fluidité de ces
 			différents contenus.
 		</p>
 		<ul class="interval-reduit">
 			<li>
-				Sur windows pour la saissie vocale <code>touche windows</code> + <code>h</code>
+				Sur Windows pour la saisie vocale <code>touche windows</code> + <code
+					>h</code
+				>
 			</li>
 			<li>
-				Sur Mac pour la saissie vocale <code>control</code> x2
+				Sur Mac pour la saisie vocale <code>control</code> x2
 			</li>
 			<li>
-				Sur Mac pour écouter un texte <code>option</code> + <code>esc</code>
+				Sur Mac pour écouter un texte <code>option</code> + <code
+					>esc</code
+				>
 			</li>
 		</ul>
-		<h3>Concision</h3>
+		<h3 id="6.2">Concision</h3>
 		<p>
-			Faire court, c'est prioriser et hyrachiser les informations contenus
-			dans les textes. <br />Pour y parvenir, on peut limiter les
-			adverbes, les verbes ternes et les proposition subordonnée qui
-			favorise les phrases très longues.
+			Faire court, c'est réduire les textes tout en gardant les
+			informations essentielles. Pour y parvenir, on peut limiter les
+			adverbes, les verbes ternes et les propositions subordonnés qui
+			favorisent les phrases très longues.
+		</p>
+		<p>
+			Travailler la concision, c'est également comprendre les écrits en
+			quelques mots. Commencer les phrases et les paraphes par ce qui est
+			utile. Par exemple, au lieu de "j'accepte de recevoir les
+			informations et les offres promotionnelles dans ma boite email" →
+			"Recevoir les promotions par email".
 		</p>
 		<h3>Abréviations, anglicismes et termes complexes ou métier</h3>
 		<p></p>
-		<h3>Cohérence</h3>
+		<h3 id="6.3">Cohérence</h3>
 		<p>logements, location, hébergement, produits</p>
-		<h3>comprendre en quelques mots</h3>
-		<h3>Respecter les standards</h3>
+		<h3 id="6.4">Respecter les standards</h3>
 		<p>Numéro de téléphone</p>
-		<h3>Limiter conditionnel</h3>
-		<h3>Formulation maladroite</h3>
+		<h3 id="6.5">Limiter le conditionnel</h3>
+		<h3 id="6.6">Formulation maladroite</h3>
 		<p>Conjonction de disjonction</p>
-		<h3>Neutralité dans les zones sensibles</h3>
+		<h3 id="6.7">Neutralité dans les zones sensibles</h3>
 		<p>
-			Si votre organisations a une identité de rédaction décalé ou même
-			humorisitique elle ne doit pas appliquer se ton et cette voix sur les
-			parties relative à
+			Si une organisation a une identité de rédaction décalée ou même
+			humoristique, elle ne doit pas appliquer ce ton et cette voix sur
+			les parties relative à
 		</p>
 		<ul class="interval-reduit">
 			<li>L'argent</li>
@@ -204,23 +258,25 @@ import LayoutArticle from "../../layouts/LayoutArticle.astro";
 			<li>La vie</li>
 		</ul>
 		<p>
-			Toutes les identité se doivent d'être empatique. Les écris décalé
-			peuvent être mal perçu, indigner et blesser votre lecteur sur des
-			tématiques sensible. Si vous êtes un asssureurs et que votre
-			positionement stratégique s'address aux jeunes ne mettez pas pour autant de
-			blague sur votre formualaire de déclaration de sinistre/accident.
+			Toutes les identités se doivent d'être empathique. Les écrits
+			décalés peuvent être mal perçus, indigner et blesser votre lecteur
+			sur des thématiques sensibles. Si vous êtes un assureur et que votre
+			positionnement stratégique s'adresse aux jeunes branchés, ne mettez
+			pas pour autant de blagues sur votre formulaire de déclaration de
+			sinistre.
 		</p>
-		<h3>Une mise en forme pour servir le texte</h3>
+		<h3 id="6.8">Une mise en forme pour servir le texte</h3>
 		<p>
-			Une bonne mise en forme aussi c'est simplier la comprention d'un
-			texte. Utilise des liste à puces, liste numéroté et des paragraphe pour
-			servir aider à identifié le type de contenu présenté.
+			Choisir une bonne mise en forme, c'est aussi simplifier la
+			compréhension d'un texte. Utiliser des listes à puces, liste
+			numérotées et des paragraphes pour servir et aider à identifier le
+			type de contenu présenté.
 		</p>
-		<h3>Écrire les messages d’erreurs</h3>
+		<h2 id="7">Écrire les messages d’erreurs</h2>
 		<p>
-			S'il y a bien un endroit où un texte et crucial, c'est la rédaction
-			des messages d'erreur. Elles font partie de nombreux parcours
-			utilisateur et elle peuvent être source de frustration et
+			S'il y a bien un endroit où l'UX writing est crucial, c'est la
+			rédaction des messages d'erreurs. Elles font partie de nombreux
+			parcours utilisateur et elle peuvent être source de frustration et
 			d'incompréhension. Pour ne pas manquer leurs objectifs, ces messages
 			doivent contenir de manière concise :
 		</p>
@@ -230,29 +286,42 @@ import LayoutArticle from "../../layouts/LayoutArticle.astro";
 			<li>Pourquoi cela s'est passé</li>
 			<li>Une solution ou un recours</li>
 		</ul>
-		<h3>Facile à lire et à comprendre</h3>
+		<h2 id="8">Facile à lire et à comprendre</h2>
 		<p>
-			C'est le nom que porte cette initiative associative europpénne.
-			L'objectif : donner des bonnes paratiques et une métodologie pour
-			élaborer des textes à destination des personnes atteinte de
-			handicap mentaux.
-		</p> 
+			C'est le nom que porte cette initiative associative européenne. Son
+			objectif est de donner des bonnes pratiques et une méthodologie pour
+			élaborer des textes à destination des personnes atteinte de handicap
+			mental. C'est une approche pertinente pour améliorer ses écrits et
+			les rendre accessibles à tous. On y retrouve des règles comme :
+		</p>
 		<ul class="interval-reduit">
-			<li>Utilier des phrases courtes</li>
+			<li>Utiliser des courtes phrases</li>
 			<li>Utiliser des mots de la vie de tous les jours</li>
-			<li>Illuster les propos avec des images simples</li>
-			<li>Tester les textes auprès de la des personnes atteinte de ces handicaps</li>
+			<li>Illustrer les propos avec des images simples</li>
+			<li>
+				Tester les textes auprès des personnes atteintes de ces handicaps
+			</li>
 		</ul>
 		<p>
-			<a href="https://www.unapei.org/wp-content/uploads/2018/11/L%E2%80%99information-pour-tous-Re%CC%80gles-europe%CC%81ennes-pour-une-information-facile-a%CC%80-lire-et-a%CC%80-comprendre.pdf" target="_blank">Lire la documentation complète</a>
+			<a
+				href="https://www.unapei.org/wp-content/uploads/2018/11/L%E2%80%99information-pour-tous-Re%CC%80gles-europe%CC%81ennes-pour-une-information-facile-a%CC%80-lire-et-a%CC%80-comprendre.pdf"
+				target="_blank">Lire la documentation complète</a
+			>
 		</p>
-		<h2>Comment évaluer les écrits</h2>
-		<h3>Le test de mise en avant</h3>
+		<h2 id="9">Comment évaluer les écrits</h2>
+		<h3 id="9.1">Le test de mise en avant</h3>
 		<p>
-			Plus populaire sous le nom "teste su Stabilo", il consiste à
+			Plus populaire sous le nom "teste du Stabilo", il consiste à
 			demander aux utilisateurs de surligner tous les contenus avec
 			plusieurs feutres :
 		</p>
+
+		<img
+			src="/assets/article-writing-highlight.webp"
+			loading="lazy"
+			alt="Explications d'une faq surligné avec plusieurs feutres"
+		/>
+
 		<ul class="interval-reduit">
 			<li>
 				<span class="souslignevert">Vert</span> pour ceux qu'ils comprennent
@@ -271,15 +340,17 @@ import LayoutArticle from "../../layouts/LayoutArticle.astro";
 				font peur ou les bloquent
 			</li>
 		</ul>
-		<h3>Les tests automatiques</h3>
+
+		<h3 id="9.2">Les tests automatiques</h3>
 		<p>
-			Parmi aux figure le test de Flesch Kincaid. Il prend en compte le
-			nombre de mots par phrase et le nombre de syllabes par mots. <a
+			Parmi eux figure le test de Flesch Kincaid. Il prend en compte le
+			nombre de mots par phrase et le nombre de syllabes par mots et en
+			tire un score par pondération. <a
 				href="https://qualitexte.lucaslacroix.com/"
 				target="_blank"
 				rel="nofollow">QualiTexte</a
-			> est un outil maison qui permet de tester et d'obtenir des pistes de simplification
-			des textes.
+			> est un outil qui permet de tester et d'obtenir des pistes de
+			simplification des textes.
 		</p>
 	</p>
 	<style>
